@@ -1,0 +1,40 @@
+"use client";
+import BlurFade from "@/components/magicui/blur-fade";
+import BlurFadeText from "@/components/magicui/blur-fade-text";
+import { Bento } from "@/components/BentoTemplateSlide";
+
+const BLUR_FADE_DELAY = 0.04;
+
+export default function Page() {
+  return (
+    <main className="flex flex-col min-h-[100dvh]">
+
+        <section id="hero" className="flex min-h-[40dvh] flex-1 items-center justify-center text-center">
+          <div className="w-full max-w-2xl space-y-8 mx-auto">
+            <div className="flex flex-col items-center justify-center space-y-1.5">
+                <BlurFadeText
+                  delay={BLUR_FADE_DELAY}
+                  className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-4xl lg:text-5xl font-semibold text-transparent dark:from-white dark:to-black"
+                  yOffset={8}
+                  text={`Slides Templates`}
+                />
+                <BlurFadeText
+                  className="max-w-[700px] text-2xl text-gris_2"
+                  delay={BLUR_FADE_DELAY}
+                  text={'Rendez vos présentations attractives'}
+                />
+            </div>
+          </div>
+        </section>
+
+        <section id="projects">
+          <div className="space-y-12 w-full py-12 max-w-[1100px] mx-auto">
+              <BlurFade>
+                <Bento/>
+              </BlurFade>
+          </div>
+        </section>
+
+    </main>
+  );
+}
