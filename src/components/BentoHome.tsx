@@ -147,7 +147,7 @@ const features = [
   },
   {
     name: "Works & collabs",
-    description: "Découvrez l'ensemble de mes créations",
+    description: "Découvrez une séclection de mes dernière créations",
     href: "/work",
     className: "cursor-pointer col-span-3 lg:col-span-2",
     background: (
