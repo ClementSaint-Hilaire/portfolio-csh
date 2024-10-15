@@ -75,25 +75,6 @@ const ReviewCard = ({
     </figure>  
   );
 };
- 
-export function MarqueeDemo() {
-  return (
-    <div className="relative flex h-[800px] w-full flex-col items-center justify-center overflow-hidden bg-background md:shadow-xl">
-      <Marquee pauseOnHover className="[--duration:40s]">
-        {firstRow.map((ds) => (
-          <ReviewCard key={ds.name} {...ds} />
-        ))}
-      </Marquee>
-      <Marquee reverse pauseOnHover className="[--duration:40s]">
-        {secondRow.map((ds) => (
-          <ReviewCard key={ds.name} {...ds} />
-        ))}
-      </Marquee>
-    </div>
-  );
-} 
-
-
 
 //Page start here
 
@@ -194,10 +175,7 @@ export default function Page() {
           <OpenDSBouton/>
       </BlurFade>
 
-
-
-
-
     </main>
   );
 }
+
