@@ -136,7 +136,7 @@ const sections = [
     description: "Shut up and take my money ! ",
     className: "col-span-3 lg:col-span-2",
     background: (
-      <img src="/uikit/pricing.png"/>
+      <img src="/uikit/payment.png"/>
     ),
   },
   {

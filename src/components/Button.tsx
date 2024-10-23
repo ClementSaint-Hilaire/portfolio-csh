@@ -14,7 +14,7 @@ export function ContactBouton() {
 
 export function OpenBouton() {
   return (
-    <a className="z-10 flex min-h-[10rem] items-center justify-center" href="https://www.figma.com/community/file/1411338115792823148/csh-ui-landing-kit-v1-0">
+    <a className="z-10 flex min-h-[10rem] items-center justify-center" href="https://www.figma.com/community/file/1411338115792823148/csh-ui-landing-kit-v1-0" target="_blank">
       <ShimmerButton className="shadow-2xl" >
         <span className="whitespace-pre-wrap text-center text-xl font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
           Ouvrir
@@ -26,7 +26,7 @@ export function OpenBouton() {
 
 export function OpenDSBouton() {
   return (
-    <a className="z-10 flex min-h-[10rem] items-center justify-center" href="https://www.figma.com/community/file/1412016153426631847/csh-design-system-v1">
+    <a className="z-10 flex min-h-[10rem] items-center justify-center" href="https://cshd.gumroad.com/l/csh-design-system" target="_blank">
       <ShimmerButton className="shadow-2xl" >
         <span className="whitespace-pre-wrap text-center text-xl font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
           Ouvrir
@@ -38,7 +38,7 @@ export function OpenDSBouton() {
 
 export function OpenOnFigmaBouton() {
   return (
-    <a className="z-10 flex flex-col gap-2 min-h-[10rem] items-center justify-center" href="https://www.figma.com/community/file/1411338115792823148/csh-ui-landing-kit-v1-0">
+    <a className="z-10 flex flex-col gap-2 min-h-[10rem] items-center justify-center" href="https://www.figma.com/community/file/1411338115792823148/csh-ui-landing-kit-v1-0" target="_blank">
       <ShimmerButton className="shadow-2xl" >
         <span className="whitespace-pre-wrap text-center text-xl font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
           Commencer mon projet
@@ -52,7 +52,7 @@ export function OpenOnFigmaBouton() {
 
 export function OpenIconBouton() {
   return (
-    <a className="z-10 flex flex-col gap-2 min-h-[10rem] items-center justify-center" href="https://www.figma.com/community/file/1412017477167007912/csh-icons">
+    <a className="z-10 flex flex-col gap-2 min-h-[10rem] items-center justify-center" href="https://cshd.gumroad.com/l/csh-icons" target="_blank">
       <ShimmerButton className="shadow-2xl" >
         <span className="whitespace-pre-wrap text-center text-xl font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
           Obtenir csh Icons
