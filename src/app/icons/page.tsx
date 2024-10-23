@@ -21,8 +21,8 @@ export default function Page() {
                   text={`csh Icons`}
                 />
                   <BlurFadeText
-                    className="md:text-2xl text-gris_2 font-[600]"
-                    delay={BLUR_FADE_DELAY}
+                  className="max-w-[700px] text-2xl text-gris_2"
+                  delay={BLUR_FADE_DELAY}
                     text={`Juste ce dont vous avez besoin`}
                   />
                 </div>
