@@ -15,27 +15,18 @@ export const DATA = {
   skills: [
   ],
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    //{ href: "https://medium.com/@clement.sainthilaire.app", icon: NotebookIcon, label: "Blog" },
+    { href: "/", icon: Icons.csh, label: "home" },
+  ],
+  pages: [
+    { href: "/design-system", name: "Design System" },
+    { href: "/icons", name: "Icons" },
+    { href: "/work", name: "Works" },
+    { href: "/templates", name: "Templates" },
   ],
   contact: {
     email: "clement.sainthilaire.pro@gmail.com",
     tel: "",
     social: {
-      GitHub: {
-        name: "GitHub",
-        url: "https://github.com/ClementSaint-Hilaire",
-        icon: Icons.github,
-
-        navbar: true,
-      },
-      Discord: {
-        name: "Discord",
-        url: "https://discord.gg/h7ycZaTTyk",
-        icon: Icons.Discord,
-
-        navbar: true,
-      },
       Figma: {
         name: "Figma",
         url: "https://www.figma.com/@cshd",
@@ -48,13 +39,6 @@ export const DATA = {
         url: "https://www.threads.net/@clement.sainthilaire",
         icon: Icons.threads,
         navbar: true,
-      },
-      email: {
-        name: "Send Email",
-        url: "#",
-        icon: Icons.email,
-
-        navbar: false,
       },
     },
   },
