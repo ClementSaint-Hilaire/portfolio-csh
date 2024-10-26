@@ -205,7 +205,7 @@ const features = [
 },
 {
   name: "My Blog",
-  description: "Découvrez mes écrits et recherches sur divers surjets tech",
+  description: "Découvrez mes écrits et recherches sur divers sujets tech",
   href: "https://medium.com/@clement.sainthilaire.app",
   className: "col-span-3 lg:col-span-1",
   background: (
