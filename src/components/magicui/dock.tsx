@@ -16,7 +16,7 @@ const DEFAULT_MAGNIFICATION = 60;
 const DEFAULT_DISTANCE = 140;
 
 const dockVariants = cva(
-  "mx-auto min-w-max w-[380px] h-full p-2 flex justify-between items-end rounded-full border"
+  "mx-auto min-w-max w-full h-full p-2 flex justify-between items-end"
 );
 
 const Dock = React.forwardRef<HTMLDivElement, DockProps>(
@@ -51,10 +51,10 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
 
     return (
       <motion.div
-        ref={ref}
-        onMouseMove={(e) => mousex.set(e.pageX)}
-        onMouseLeave={() => mousex.set(Infinity)}
-        {...props}
+        // ref={ref}
+        // onMouseMove={(e) => mousex.set(e.pageX)}
+        // onMouseLeave={() => mousex.set(Infinity)}
+        // {...props}
         className={cn(dockVariants({ className }))}
       >
         {renderChildren()}

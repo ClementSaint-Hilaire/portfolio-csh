@@ -1,7 +1,10 @@
+'use client';
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { ModeToggle } from "@/components/mode-toggle";
 import { buttonVariants } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import Image from 'next/image'
+import { useState } from 'react';
+
 import {
   Tooltip,
   TooltipContent,
@@ -11,75 +14,140 @@ import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
+
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Toggle the side menu
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const [activeLink, setActiveLink] = useState<number | null>(null);
+
+  const navLinks = [
+    { href: '/design-system', label: 'Design System' },
+    { href: '/icons', label: 'Icons' },
+    { href: '/ui-kit', label: 'UI Landing Kit' },
+    { href: '/work', label: 'Works' },
+    { href: '/templates', label: 'Templates' },
+  ];
+
   return (
-    <div className="pointer-events-none fixed inset-x-0 top-8 z-30 maw-w-full mx-auto mb-4 flex origin-top h-full max-h-14">
-      <Dock className="z-50 pointer-events-auto relative mx-auto flex min-h-full h-full items-center px-1 bg-background [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] ">
-        {DATA.navbar.map((item) => {
-          const isExternalLink = item.href.startsWith('http');
-          return (
-            <DockIcon key={item.href}>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    href={item.href}
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12"
-                    )}
-                    target={isExternalLink ? "_blank" : "_self"}
-                    rel={isExternalLink ? "noopener noreferrer" : undefined}
+    <div>
+        {/* Side Menu for mobile */}
+        <div
+          className={`${
+            isOpen ? "translate-x-0" : "translate-x-full"
+          } fixed z-40 top-0 right-0 w-full h-full bg-white text-currentColor transform transition-transform duration-300 ease-in-out md:hidden`}
+        >
+        <div className="p-[30px] flex flex-col items-end">
+            <button onClick={toggleMenu}>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.34301 6.34375L17.6567 17.6575M17.6565 6.34375L6.34277 17.6575" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            
+            <div className="mt-[50px] flex flex-col relative right-0 space-y-6 pl-8">
+              {navLinks.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.href}
+                    onMouseEnter={() => setActiveLink(index)}
+                    onMouseLeave={() => setActiveLink(null)}
+                    className={`text-[32px] text-right font-semibold transition-colors duration-100 ${
+                      activeLink === index ? 'text-grey' : 'currentColor'
+                    } ${activeLink !== index && activeLink !== null && 'text-gray-400'}`}
                   >
-                    <item.icon className="size-4" />
-                  </Link>
+                    {link.label}
+                  </a>
+                ))}
+            </div>
+          </div>
+        </div>
+
+    <div className="pointer-event-none fixed top-0 z-30 w-full mb-4 flex left-0	 origin-top h-full max-h-[6rem] md:max-h-[4rem] bg-white bg-opacity-50 backdrop-blur-md dark:bg-black dark:bg-opacity-40">
+      <div className="z-50 mx-auto pointer-events-auto relative flex min-h-full h-full w-full max-w-[1100px] ">
+
+          <div className="w-full relative flex justify-between gap-[150px] items-center p-[20px] md:p-0">
+            <a className="flex relative" href="/">
+              <Tooltip>
+                  <TooltipTrigger asChild>
+                  <Image
+                    src="/Logo.png"
+                    width={70}
+                    height={70}
+                    alt="logo"
+                />
                 </TooltipTrigger>
-                <TooltipContent>
-                  <p>{item.label}</p>
-                </TooltipContent>
+                  <TooltipContent>
+                    <p>Home</p>
+                  </TooltipContent>
               </Tooltip>
-            </DockIcon>
-          );
-        })}
-        <Separator orientation="vertical" className="h-full" />
-        {Object.entries(DATA.contact.social)
-          .filter(([_, social]) => social.navbar)
-          .map(([name, social]) => {
-            const isExternalLink = social.url.startsWith('http');
-            return (
-              <DockIcon key={name}>
+            </a>
+            <div className="flex relative w-full justify-between hidden md:flex">
+              {navLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  onMouseEnter={() => setActiveLink(index)}
+                  onMouseLeave={() => setActiveLink(null)}
+                  className={`text-[14px] font-medium transition-colors duration-100 ${
+                    activeLink === index ? 'text-grey' : 'currentColor'
+                  } ${activeLink !== index && activeLink !== null && 'text-gray-400'}`}
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+
+             <button
+                className="md:hidden focus:outline-none"
+                onClick={toggleMenu}
+              >
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 9L20 9M12 15L20 15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            
+            <div className="flex relative items-center gap-[5px] hidden md:flex">
+              {Object.entries(DATA.contact.social)
+                .filter(([_, social]) => social.navbar)
+                .map(([name, social]) => {
+                  const isExternalLink = social.url.startsWith('http');
+                  return (
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Link
+                            href={social.url}
+                            className={cn(
+                              buttonVariants({ variant: "ghost", size: "icon" }),
+                              "size-12"
+                            )}
+                            target={isExternalLink ? "_blank" : "_self"}
+                            rel={isExternalLink ? "noopener noreferrer" : undefined}
+                          >
+                            <social.icon className="size-4" />
+                          </Link>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>{name}</p>
+                        </TooltipContent>
+                      </Tooltip>
+                  );
+                })}
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Link
-                      href={social.url}
-                      className={cn(
-                        buttonVariants({ variant: "ghost", size: "icon" }),
-                        "size-12"
-                      )}
-                      target={isExternalLink ? "_blank" : "_self"}
-                      rel={isExternalLink ? "noopener noreferrer" : undefined}
-                    >
-                      <social.icon className="size-4" />
-                    </Link>
+                    <ModeToggle/>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>{name}</p>
+                    <p>Theme</p>
                   </TooltipContent>
                 </Tooltip>
-              </DockIcon>
-            );
-          })}
-        <Separator orientation="vertical" className="h-full py-2" />
-        <DockIcon>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <ModeToggle />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Theme</p>
-            </TooltipContent>
-          </Tooltip>
-        </DockIcon>
-      </Dock>
+            </div>
+          </div>
+      </div>
+    </div>
     </div>
   );
 }
