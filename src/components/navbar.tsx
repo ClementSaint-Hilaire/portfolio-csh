@@ -28,7 +28,7 @@ export default function Navbar() {
   const navLinks = [
     { href: '/design-system', label: 'Design System' },
     { href: '/icons', label: 'Icons' },
-    { href: '/ui-kit', label: 'UI Landing Kit' },
+    { href: '/uikit', label: 'UI Landing Kit' },
     { href: '/work', label: 'Works' },
     { href: '/templates', label: 'Templates' },
   ];
@@ -74,7 +74,7 @@ export default function Navbar() {
               <Tooltip>
                   <TooltipTrigger asChild>
                   <Image
-                    src="/Logo.png"
+                    src="/logo.png"
                     width={70}
                     height={70}
                     alt="logo"
