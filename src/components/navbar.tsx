@@ -73,12 +73,7 @@ export default function Navbar() {
             <a className="flex relative" href="/">
               <Tooltip>
                   <TooltipTrigger asChild>
-                  <Image
-                    src="/logo.png"
-                    width={70}
-                    height={70}
-                    alt="logo"
-                />
+                  <img src="/logo.png" alt="logo" className="w-[70px]"/>
                 </TooltipTrigger>
                   <TooltipContent>
                     <p>Home</p>
