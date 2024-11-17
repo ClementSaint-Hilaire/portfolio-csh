@@ -2,7 +2,7 @@ import { GlobeIcon, MailIcon } from "lucide-react";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
-export const Icons = {
+export const  Icons = {
   globe: (props: IconProps) => <GlobeIcon {...props} />,
   email: (props: IconProps) => <MailIcon {...props} />,
  
@@ -39,14 +39,15 @@ export const Icons = {
 
   ),
   figma: (props: IconProps) => (
-    <svg width="24" height="26" viewBox="0 0 24 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <title>Figma</title>
-      <path fill-rule="currentColor" clip-rule="currentColor" d="M3.5 4C3.5 6.20914 5.29086 8 7.5 8H11.5V0H7.5C5.29086 0 3.5 1.79086 3.5 4Z" fill="currentColor"/>
-      <path fill-rule="currentColor" clip-rule="currentColor" d="M11.5 0V8H15.5C17.7091 8 19.5 6.20914 19.5 4C19.5 1.79086 17.7091 0 15.5 0H11.5Z" fill="currentColor"/>
-      <path fill-rule="currentColor" clip-rule="currentColor" d="M3.5 12C3.5 14.2091 5.29086 16 7.5 16H11.5V8H7.5C5.29086 8 3.5 9.79086 3.5 12Z" fill="currentColor"/>
-      <path fill-rule="currentColor" clip-rule="currentColor" d="M11.5 12C11.5 9.79086 13.2909 8 15.5 8C17.7091 8 19.5 9.79086 19.5 12C19.5 14.2091 17.7091 16 15.5 16C13.2909 16 11.5 14.2091 11.5 12Z" fill="currentColor"/>
-      <path fill-rule="currentColor" clip-rule="currentColor" d="M3.5 20C3.5 17.7909 5.29086 16 7.5 16H11.5V20C11.5 22.2091 9.70914 24 7.5 24C5.29086 24 3.5 22.2091 3.5 20Z" fill="currentColor"/>
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5.5 5.65C4.31259 5.65 3.35 4.68741 3.35 3.5C3.35 2.31259 4.31259 1.35 5.5 1.35H7.65V5.65H5.5Z" stroke="currentColor" stroke-width="1"/>
+      <path d="M10.5 5.65H8.35V1.35H10.5C11.6874 1.35 12.65 2.31259 12.65 3.5C12.65 4.68741 11.6874 5.65 10.5 5.65Z" stroke="currentColor" stroke-width="1"/>
+      <path d="M5.5 10.65C4.31259 10.65 3.35 9.68741 3.35 8.5C3.35 7.31259 4.31259 6.35 5.5 6.35H7.65V10.65H5.5Z" stroke="currentColor" stroke-width="1"/>
+      <path d="M8.35 8.5C8.35 7.31259 9.31259 6.35 10.5 6.35C11.6874 6.35 12.65 7.31259 12.65 8.5C12.65 9.68741 11.6874 10.65 10.5 10.65C9.31259 10.65 8.35 9.68741 8.35 8.5Z" stroke="currentColor" stroke-width="1"/>
+      <path d="M3.35 13.5C3.35 12.3126 4.31259 11.35 5.5 11.35H7.65V13.5C7.65 14.6874 6.68741 15.65 5.5 15.65C4.31259 15.65 3.35 14.6874 3.35 13.5Z" stroke="currentColor" stroke-width="1"/>
     </svg>
+
+
   ),
   threads: (props: IconProps) => (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" {...props}>
