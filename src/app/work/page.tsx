@@ -2,6 +2,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { Bento } from "@/components/BentoTemplateWork";
+import Footer from "@/components/Footer";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -35,6 +36,13 @@ export default function Page() {
             </div>
         </section>
 
+        <section id="footer">
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+            <div className="max-w-[1100px] mx-auto">
+              <Footer/>
+            </div>
+          </BlurFade>
+        </section>
     </main>
   );
 }
