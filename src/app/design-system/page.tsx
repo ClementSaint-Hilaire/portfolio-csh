@@ -5,6 +5,7 @@ import { Bento } from "@/components/BentoDesignSystem";
 import { cn } from "@/lib/utils";
 import { OpenDSBouton } from "@/components/Button";
 import Marquee from "@/components/magicui/marquee";
+import Footer from "@/components/Footer";
 
 
 const BLUR_FADE_DELAY = 0.04;
@@ -175,6 +176,13 @@ export default function Page() {
           <OpenDSBouton/>
       </BlurFade>
 
+      <section id="footer">
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+            <div className="max-w-[1100px] mx-auto">
+              <Footer/>
+            </div>
+          </BlurFade>
+      </section>
     </main>
   );
 }

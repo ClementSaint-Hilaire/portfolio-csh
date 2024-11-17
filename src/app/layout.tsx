@@ -57,7 +57,7 @@ export default function RootLayout({
     <html lang="fr" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased mx-auto py-12 mx-[20px] sm:py-24 ",
+          "min-h-screen bg-background font-sans antialiased mx-auto pt-12 mx-[20px] sm:pt-24 ",
           fontSans.variable
         )}
       >

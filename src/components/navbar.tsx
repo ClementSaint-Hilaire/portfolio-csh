@@ -66,14 +66,14 @@ export default function Navbar() {
           </div>
         </div>
 
-    <div className="pointer-event-none fixed top-0 z-30 w-full mb-4 flex left-0	 origin-top h-full max-h-[6rem] md:max-h-[4rem] bg-white bg-opacity-50 backdrop-blur-md dark:bg-black dark:bg-opacity-40">
+    <div className="pointer-event-none fixed top-0 z-30 w-full mb-4 flex left-0	origin-top h-full max-h-[6rem] md:max-h-[4rem] bg-white bg-opacity-50 backdrop-blur-md dark:bg-black dark:bg-opacity-40">
       <div className="z-50 mx-auto pointer-events-auto relative flex min-h-full h-full w-full max-w-[1100px] ">
 
           <div className="w-full relative flex justify-between gap-[150px] items-center p-[20px] md:p-0">
             <a className="flex relative" href="/">
               <Tooltip>
                   <TooltipTrigger asChild>
-                  <img src="/logo.png" alt="logo" className="w-[70px]"/>
+                  <img src="/logo.png" alt="logo" className="w-[40px] md:w-[70px]"/>
                 </TooltipTrigger>
                   <TooltipContent>
                     <p>Home</p>

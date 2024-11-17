@@ -6,6 +6,7 @@ import { Bento2 } from "@/components/BentoUikit";
 import { cn } from "@/lib/utils";
 import { OpenBouton } from "@/components/Button";
 import { OpenOnFigmaBouton } from "@/components/Button";
+import Footer from "@/components/Footer";
 
 
 const BLUR_FADE_DELAY = 0.04;
@@ -136,14 +137,12 @@ export default function Page() {
       </div>
 
       <section id="footer">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div>
-            
+            <div className="max-w-[1100px] mx-auto">
+              <Footer/>
             </div>
           </BlurFade>
-        </div>
-      </section>
+        </section>
     </main>
   );
 }
