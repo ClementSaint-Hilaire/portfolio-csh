@@ -5,6 +5,7 @@ import Particles from "@/components/magicui/particles";
 import { Bento } from "@/components/BentoHome";
 import { ContactBouton } from "@/components/Button";
 import Footer from "@/components/Footer";
+import BandeauNews from "@/components/BandeauNews";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -18,6 +19,7 @@ export default function Page() {
             color={"currentColor"}
             refresh
         />
+            <BandeauNews/>
 
       <section id="hero" className="flex min-h-[90dvh] max-w-[1100px]flex-1 items-center justify-center text-center">
         <div className="w-full space-y-8 mx-auto">
