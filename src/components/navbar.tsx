@@ -1,8 +1,6 @@
 'use client';
-import { Dock, DockIcon } from "@/components/magicui/dock";
 import { ModeToggle } from "@/components/mode-toggle";
 import { buttonVariants } from "@/components/ui/button";
-import Image from 'next/image'
 import { useState } from 'react';
 
 import {
@@ -26,11 +24,11 @@ export default function Navbar() {
   const [activeLink, setActiveLink] = useState<number | null>(null);
 
   const navLinks = [
-    { href: '/design-system', label: 'Design System' },
-    { href: '/icons', label: 'Icons' },
-    { href: '/uikit', label: 'UI Landing Kit' },
-    { href: '/work', label: 'Works' },
-    { href: '/templates', label: 'Templates' },
+    { id: '1', href: '/design-system', label: 'Design System' },
+    { id: '2', href: '/icons', label: 'Icons' },
+    { id: '3', href: '/uikit', label: 'UI Landing Kit' },
+    { id: '4', href: '/work', label: 'Works' },
+    { id: '5', href: '/templates', label: 'Templates' },
   ];
 
   return (
