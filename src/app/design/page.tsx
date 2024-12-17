@@ -1,10 +1,8 @@
 "use client";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
-import { Bento } from "@/components/BentoDesign";
 import Footer from "@/components/Footer";
-import RecentWorkCarousel from "@/components/Carrousel/CarrouselDesign";  
-
+import RecentWorkCarousel from "@/components/Carrousel/Design-recentwork";  
 const BLUR_FADE_DELAY = 0.04;
 
 
@@ -31,14 +29,12 @@ export default function Page() {
         </section>
 
         <section>
-          <div className="space-y-12 w-full py-12 mx-auto gap-[100px]">
+          <div className="space-y-12 w-full py-12 mx-auto flex flex-col">
             <BlurFade>
-              <RecentWorkCarousel />
               <RecentWorkCarousel />
             </BlurFade>
           </div>
-
-          </section>
+        </section>
 
 
         <section id="footer">
