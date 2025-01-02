@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -69,7 +69,13 @@ export default function RecentWorkCarousel() {
             target={slide.href.startsWith('https') ? '_blank' : undefined}
             rel={slide.href.startsWith('https') ? 'noopener noreferrer' : undefined}
             >
-              <img src={slide.img} alt={slide.bio} className='w-full h-full object-cover'/>
+              <Image
+                src={slide.img}
+                alt={slide.bio}
+                width={490}
+                height={350}
+                className='object-cover'
+              />
             </a>
           </SwiperSlide>
         ))}

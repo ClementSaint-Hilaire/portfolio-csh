@@ -7,6 +7,8 @@ import WebDesignCarousel from "@/components/Carrousel/Design-webdesing";
 import AppDesignCarousel from "@/components/Carrousel/Design-appdesing";
 import GraphicDesignCarousel from "@/components/Carrousel/Design-graphicdesing";
 import ResearchCarousel from "@/components/Carrousel/Design-research";
+import Image from 'next/image';
+
 const BLUR_FADE_DELAY = 0.04;
 
 
