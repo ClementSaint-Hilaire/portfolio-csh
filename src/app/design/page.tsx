@@ -12,7 +12,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh]">
+    <main className="flex flex-col min-h-[100dvh] ml-[16px]">
 
         <section id="hero" className="flex min-h-[20dvh] flex-1 items-center justify-center text-center">
             <div className="w-full max-w-2xl space-y-8 mx-auto">

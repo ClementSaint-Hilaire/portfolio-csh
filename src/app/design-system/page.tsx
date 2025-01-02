@@ -81,7 +81,7 @@ const ReviewCard = ({
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh]">
+    <main className="flex flex-col min-h-[100dvh] mx-[16px]">
       <section id="hero" className="flex min-h-[25dvh] flex-1 items-center justify-center text-center">
         <div className="w-full max-w-2xl mx-auto">
           <div className="flex flex-col mt-[150px] lg:mt-0 items-center justify-centers">

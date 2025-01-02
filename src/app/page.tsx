@@ -11,7 +11,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh]">
+    <main className="flex flex-col min-h-[100dvh] mx-[16px]">
         <Particles
             className="absolute inset-0"
             quantity={200}

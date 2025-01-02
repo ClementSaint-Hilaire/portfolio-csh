@@ -27,7 +27,7 @@ export default function Navbar() {
     { id: '1', href: '/design-system', label: 'Design System' },
     { id: '2', href: '/icons', label: 'Icons' },
     { id: '3', href: '/uikit', label: 'UI Landing Kit' },
-    { id: '4', href: '/work', label: 'Works' },
+    { id: '4', href: '/design', label: 'Designs' },
     { id: '5', href: '/templates', label: 'Templates' },
   ];
 

@@ -44,16 +44,21 @@ export default function WebDesignCarousel() {
 
       <Swiper
         modules={[Navigation]}
-        spaceBetween={20}
+        spaceBetween={24}
         slidesPerView={1.5}
         navigation={{
             nextEl: '.swiper-button-next-custom',
             prevEl: '.swiper-button-prev-custom',
           }}
-        breakpoints={{
-          640: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
+          breakpoints={{
+            380: {
+              slidesPerView: 1.1,
+            },
+            640: { 
+              slidesPerView: 2,
+             },
+            1024: { slidesPerView: 3 },
+          }}
         className="relative flex min-w-full snap-x snap-mandatory"
         style={{ paddingLeft: "calc(50% - 68rem / 2)" }}
         >
