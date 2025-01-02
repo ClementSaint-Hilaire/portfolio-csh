@@ -19,7 +19,7 @@ export default function Page() {
             color={"currentColor"}
             refresh
         />
-            <BandeauNews/>
+        <BandeauNews/>
 
       <section id="hero" className="flex min-h-[90dvh] max-w-[1100px]flex-1 items-center justify-center text-center">
         <div className="w-full space-y-8 mx-auto">
