@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -70,7 +70,13 @@ export default function WebDesignCarousel() {
             target={webSlides.href.startsWith('https') ? '_blank' : undefined}
             rel={webSlides.href.startsWith('https') ? 'noopener noreferrer' : undefined}
             >
-              <img src={webSlides.img} alt={webSlides.bio} className='w-full h-full object-cover'/>
+              <Image
+                src={webSlides.img}
+                alt={webSlides.bio}
+                width={490}
+                height={350}
+                className='object-cover'
+              />
             </a>
           </SwiperSlide>
         ))}

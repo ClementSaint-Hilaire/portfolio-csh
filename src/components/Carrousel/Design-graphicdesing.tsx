@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -70,7 +70,13 @@ export default function GraphicDesignCarousel() {
             target={graphicSlides.href.startsWith('https') ? '_blank' : undefined}
             rel={graphicSlides.href.startsWith('https') ? 'noopener noreferrer' : undefined}
             >
-              <img src={graphicSlides.img} alt={graphicSlides.bio} className='w-full h-full object-cover'/>
+              <Image
+                src={graphicSlides.img}
+                alt={graphicSlides.bio}
+                width={490}
+                height={350}
+                className='object-cover'
+              />
             </a>
           </SwiperSlide>
         ))}

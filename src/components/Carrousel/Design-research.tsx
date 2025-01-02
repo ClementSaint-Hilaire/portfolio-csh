@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -72,7 +72,13 @@ export default function ResearchCarousel() {
             target={reseearchSlides.href.startsWith('https') ? '_blank' : undefined}
             rel={reseearchSlides.href.startsWith('https') ? 'noopener noreferrer' : undefined}
             >
-              <img src={reseearchSlides.img} alt={reseearchSlides.bio} className='w-full h-full object-cover'/>
+              <Image
+                src={reseearchSlides.img}
+                alt={reseearchSlides.bio}
+                width={490}
+                height={350}
+                className='object-cover'
+              />
             </a>
           </SwiperSlide>
         ))}
