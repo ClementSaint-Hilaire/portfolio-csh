@@ -3,6 +3,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import Footer from "@/components/Footer";
 import RecentWorkCarousel from "@/components/Carrousel/Design-recentwork";  
+import WebDesignCarousel from "@/components/Carrousel/Design-webdesing";
 const BLUR_FADE_DELAY = 0.04;
 
 
@@ -32,6 +33,9 @@ export default function Page() {
           <div className="space-y-12 w-full py-12 mx-auto flex flex-col">
             <BlurFade>
               <RecentWorkCarousel />
+            </BlurFade>
+            <BlurFade>
+              <WebDesignCarousel />
             </BlurFade>
           </div>
         </section>

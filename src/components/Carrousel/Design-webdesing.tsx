@@ -5,8 +5,8 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-export default function RecentWorkCarousel() {
-  const slides = [
+export default function WebDesignCarousel() {
+  const dslides = [
     { id: 1, title: 'csh Design System', bio: 'La simplicité à votre service.', href: '/design-system', img: '/design/design-system.png'},
     { id: 2, title: 'Figma Thumbs',  bio: '', href: '/https://www.figma.com/community/file/1421800356040679325/figma-thumbs-design-template', img: '/design/project-thumbnail.png' },
     { id: 3, title: 'csh UI Landing Kit',  bio: '', href: '/uikit', img: '/design/landing-kit.png' },
@@ -17,12 +17,12 @@ export default function RecentWorkCarousel() {
     <div className="max-w mx-auto py-8 gap-4">
       <div className="flex mx-auto items-center justify-between items-center max-w-[1100px] py-8">  
             <h2 className=" text-[16px] lg:text-[26px] font-semibold text-gris_2">
-                <span className="text-bleu">Recent work.</span> made by csh
+                <span className="text-noir">Web Design.</span> Seamless and intuitive online experiences.
             </h2>
             {/* Flèches personnalisées */}
             <div className="flex ">
                 <button
-                className="swiper-button-prev-custom-1 p-4"
+                className="swiper-button-prev-custom p-4"
                 aria-label="back"
                 >
                 <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +31,7 @@ export default function RecentWorkCarousel() {
                 </button>
 
                 <button
-                className="swiper-button-next-custom-1 p-4"
+                className="swiper-button-next-custom p-4"
                 aria-label="next"
                 >
                     <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,8 +46,8 @@ export default function RecentWorkCarousel() {
         spaceBetween={20}
         slidesPerView={1.5}
         navigation={{
-            nextEl: '.swiper-button-next-custom-1',
-            prevEl: '.swiper-button-prev-custom-1',
+            nextEl: '.swiper-button-next-custom',
+            prevEl: '.swiper-button-prev-custom',
           }}
         breakpoints={{
           640: { slidesPerView: 2 },
@@ -56,13 +56,13 @@ export default function RecentWorkCarousel() {
         className="relative flex min-w-full snap-x snap-mandatory"
         style={{ paddingLeft: "calc(50% - 68rem / 2)" }}
         >
-        {slides.map((slide) => (
-          <SwiperSlide key={slide.id}>
+        {dslides.map((dslide) => (
+          <SwiperSlide key={dslide.id}>
             <a 
             className="h-[490px] w-[350px] rounded-xl !overflow-y-visible flex justify-center items-center flex flex-col transition ease-in-out hover:drop-shadow-md duration-250"            
-            href={slide.href}
+            href={dslide.href}
             >
-              <img src={slide.img} alt={slide.title} className='w-full h-full object-cover'/>
+              <img src={dslide.img} alt={dslide.title} className='w-full h-full object-cover'/>
             </a>
           </SwiperSlide>
         ))}
