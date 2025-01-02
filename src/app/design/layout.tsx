@@ -63,7 +63,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
-            {children}
+              {children}
           </TooltipProvider>
         </ThemeProvider>
       </body>

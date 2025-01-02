@@ -64,6 +64,10 @@
       --input: 0 0% 14.9%;
       --ring: 0 0% 83.1%;
     }
+    .custom-swiper .swiper-wrapper {
+      overflow-y: visible !important;
+      overflow-x: hidden !important;
+    }
   }
 
   @layer base {
