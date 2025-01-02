@@ -4,6 +4,9 @@ import BlurFadeText from "@/components/magicui/blur-fade-text";
 import Footer from "@/components/Footer";
 import RecentWorkCarousel from "@/components/Carrousel/Design-recentwork";  
 import WebDesignCarousel from "@/components/Carrousel/Design-webdesing";
+import AppDesignCarousel from "@/components/Carrousel/Design-appdesing";
+import GraphicDesignCarousel from "@/components/Carrousel/Design-graphicdesing";
+import ResearchCarousel from "@/components/Carrousel/Design-research";
 const BLUR_FADE_DELAY = 0.04;
 
 
@@ -11,7 +14,7 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh]">
 
-        <section id="hero" className="flex min-h-[40dvh] flex-1 items-center justify-center text-center">
+        <section id="hero" className="flex min-h-[20dvh] flex-1 items-center justify-center text-center">
             <div className="w-full max-w-2xl space-y-8 mx-auto">
                 <div className="flex flex-col items-center justify-center space-y-1.5">
                     <BlurFadeText
@@ -36,6 +39,15 @@ export default function Page() {
             </BlurFade>
             <BlurFade>
               <WebDesignCarousel />
+            </BlurFade>
+            <BlurFade>
+              <AppDesignCarousel />
+            </BlurFade>
+            <BlurFade>
+              <GraphicDesignCarousel />
+            </BlurFade>
+            <BlurFade>
+              <ResearchCarousel />
             </BlurFade>
           </div>
         </section>

@@ -7,10 +7,10 @@ import 'swiper/css/navigation';
 
 export default function RecentWorkCarousel() {
   const slides = [
-    { id: 1, title: 'csh Design System', bio: 'La simplicité à votre service.', href: '/design-system', img: '/design/design-system.png'},
-    { id: 2, title: 'Figma Thumbs',  bio: '', href: '/https://www.figma.com/community/file/1421800356040679325/figma-thumbs-design-template', img: '/design/project-thumbnail.png' },
-    { id: 3, title: 'csh UI Landing Kit',  bio: '', href: '/uikit', img: '/design/landing-kit.png' },
-    { id: 4, title: 'csh Icons',  bio: '', href: '/icons', img: '/design/icons.png' },
+    { id: 1, title: 'csh Design System', bio: 'Work smarter, not harder', href: '/design-system', img: '/design/design-system.png'},
+    { id: 2, title: 'Figma Thumbs',  bio: 'Make things clean again', href: 'https://www.figma.com/community/file/1421800356040679325/figma-thumbs-design-template', img: '/design/project-thumbnail.png' },
+    { id: 3, title: 'csh UI Landing Kit',  bio: 'Made by Pro for Pros', href: '/uikit', img: '/design/landing-kit.png' },
+    { id: 4, title: 'csh Icons',  bio: 'Simply beautiful', href: '/icons', img: '/design/icons.png' },
   ];
 
   return (
@@ -59,10 +59,12 @@ export default function RecentWorkCarousel() {
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
             <a 
-            className="h-[490px] w-[350px] rounded-xl !overflow-y-visible flex justify-center items-center flex flex-col transition ease-in-out hover:drop-shadow-md duration-250"            
-            href={slide.href}
+            className="h-[490px] w-[350px] rounded-xl !overflow-y-visible flex justify-center items-center flex flex-col"            
+            href={slide.href} 
+            target={slide.href.startsWith('https') ? '_blank' : undefined}
+            rel={slide.href.startsWith('https') ? 'noopener noreferrer' : undefined}
             >
-              <img src={slide.img} alt={slide.title} className='w-full h-full object-cover'/>
+              <img src={slide.img} alt={slide.bio} className='w-full h-full object-cover'/>
             </a>
           </SwiperSlide>
         ))}
