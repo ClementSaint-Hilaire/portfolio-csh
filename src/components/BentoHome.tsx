@@ -4,6 +4,7 @@ import Marquee from "@/components/magicui/marqueeHover";
 import { MarqueeReverse } from "@/components/magicui/marqueeHover";
 import { OrbitingCirclesTools } from "./OrbitingCircles";
 
+
 //Data articles
 const files = [
   {
@@ -148,7 +149,7 @@ const features = [
   {
     name: "Works & collabs",
     description: "Découvrez une séclection de mes dernière créations",
-    href: "/work",
+    href: "/design",
     className: "cursor-pointer col-span-3 lg:col-span-2",
     background: (
       <Marquee
