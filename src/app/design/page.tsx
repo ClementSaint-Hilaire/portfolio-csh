@@ -16,23 +16,18 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] ml-[16px]">
 
-        <section id="hero" className="flex min-h-[20dvh] flex-1 items-center justify-center text-center">
-            <div className="w-full max-w-2xl space-y-8 mx-auto">
-                <div className="flex flex-col items-center justify-center space-y-1.5">
-                    <BlurFadeText
-                      delay={BLUR_FADE_DELAY}
-                      className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-4xl lg:text-5xl font-semibold text-transparent dark:from-white dark:to-black"
-                      yOffset={8}
-                      text={`Works & Collabs`}
-                    />
-                    <BlurFadeText 
-                      className="max-w-[700px] text-2xl text-gris_2"
-                      delay={BLUR_FADE_DELAY}
-                      text={'Découvrez l\'essentiel de mes travaux'}
-                    />
-                </div>
-            </div>
-        </section>
+<section id="hero" className="flex mt-24 max-w-[1100px] flex-1 items-center justify-center text-center mx-auto">
+        <div className="w-full space-y-8 mx-auto">
+          <div className="flex flex-col items-center justify-center space-y-1.5">
+            <BlurFade>
+              <div className="w-full lg:w-max text-center"><span className="text-noir text-3xl lg:text-5xl font-bold uppercase lg:leading-[88px] dark:text-blanc">Design you can</span><span className="text-[#e1e1e1] text-3xl lg:text-5xl font-bold uppercase lg:leading-[88px] dark:text-gris_2"> relate</span></div>
+            </BlurFade>
+            <BlurFade>
+              <div className="grow shrink basis-0 text-center text-[#75757a] text-[17px] font-normal lg:text-[21px] font-normal leading-7">Discover here a selection of my projetcs, creations & collaborations</div>
+            </BlurFade>
+          </div>
+        </div>
+      </section>
 
         <section>
           <div className="space-y-12 w-full py-12 mx-auto flex flex-col">

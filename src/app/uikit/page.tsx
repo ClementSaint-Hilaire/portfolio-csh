@@ -17,26 +17,12 @@ export default function Page() {
       <section id="hero" className="flex min-h-[60dvh] flex-1 items-center justify-center text-center">
         <div className="w-full max-w-2xl space-y-8 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-1.5 mt-[150px] lg:mt-[0]">
-               <BlurFadeText
-                  delay={BLUR_FADE_DELAY}
-                  className="pointer-events-none mb-[-40px] whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-4xl lg:text-5xl font-semibold text-transparent dark:from-white dark:to-black"
-                  yOffset={8}
-                  text={`csh`}
-                />
-                <BlurFadeText
-                  delay={BLUR_FADE_DELAY}
-                  className="pointer-events-none  whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-4xl lg:text-5xl font-semibold text-transparent dark:from-white dark:to-black"
-                  yOffset={8}
-                  text={`UI Landing Kit`}
-                />
-                <BlurFadeText
-                  className="max-w-[700px] text-2xl text-gris_2"
-                  delay={BLUR_FADE_DELAY}
-                  text={'Créez simplement, élégamment'}
-                />
-                <BlurFade>
-                  <OpenBouton/>
-                </BlurFade>
+            <BlurFade>
+              <div className="w-full lg:w-max text-center"><span className="text-noir text-3xl lg:text-5xl font-bold uppercase lg:leading-[88px] dark:text-blanc">csh</span><span className="text-[#e1e1e1] text-3xl lg:text-5xl font-bold uppercase lg:leading-[88px] dark:text-gris_2"> UI Landing kit</span></div>
+            </BlurFade>
+            <BlurFade>
+              <div className="grow shrink basis-0 text-center text-[#75757a] text-[17px] font-normal lg:text-[21px] font-normal leading-7">Design smarter, not harder.</div>
+            </BlurFade>
           </div>
         </div>
       </section>
