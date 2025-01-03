@@ -19,9 +19,9 @@ export default function Page() {
             color={"currentColor"}
             refresh
         />
-        <BandeauNews/>
+        {/* <BandeauNews/> */}
 
-      <section id="hero" className="flex min-h-[90dvh] max-w-[1100px]flex-1 items-center justify-center text-center">
+      <section id="hero" className="flex min-h-[90dvh] max-w-[1100px] flex-1 items-center justify-center text-center mx-auto">
         <div className="w-full space-y-8 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-1.5">
             <BlurFadeText
