@@ -7,6 +7,7 @@ import { ContactBouton } from "@/components/Button";
 import Footer from "@/components/Footer";
 import BandeauNews from "@/components/BandeauNews";
 import HomeMainCarrousel from "@/components/Carrousel/Home-main";
+import AboutSection from "@/components/About";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -65,6 +66,14 @@ export default function Page() {
               <HomeMainCarrousel/>
             </BlurFade>
         </div>
+      </section>
+
+      <section id="about">
+          <div className="space-y-12 w-full pb-12 max-w-[1100px] mx-auto">
+            <BlurFade>
+              <AboutSection/>
+            </BlurFade>
+          </div>
       </section>
 
       <section id="projects">

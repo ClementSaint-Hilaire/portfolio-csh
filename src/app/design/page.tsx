@@ -1,6 +1,5 @@
 "use client";
 import BlurFade from "@/components/magicui/blur-fade";
-import BlurFadeText from "@/components/magicui/blur-fade-text";
 import Footer from "@/components/Footer";
 import RecentWorkCarousel from "@/components/Carrousel/Design-recentwork";  
 import WebDesignCarousel from "@/components/Carrousel/Design-webdesing";
@@ -16,7 +15,7 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] ml-[16px]">
 
-<section id="hero" className="flex mt-24 max-w-[1100px] flex-1 items-center justify-center text-center mx-auto">
+      <section id="hero" className="flex mt-24 max-w-[1100px] flex-1 items-center justify-center text-center mx-auto">
         <div className="w-full space-y-8 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-1.5">
             <BlurFade>
@@ -31,7 +30,7 @@ export default function Page() {
 
         <section>
           <div className="space-y-12 w-full py-12 mx-auto flex flex-col">
-            <BlurFade>
+            <BlurFade>  
               <RecentWorkCarousel />
             </BlurFade>
             <BlurFade>
@@ -44,11 +43,10 @@ export default function Page() {
               <GraphicDesignCarousel />
             </BlurFade>
             <BlurFade>
-              <ResearchCarousel />
+              <ResearchCarousel/>
             </BlurFade>
           </div>
         </section>
-
 
         <section id="footer">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
