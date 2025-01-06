@@ -6,6 +6,7 @@ import { Bento } from "@/components/BentoHome";
 import { ContactBouton } from "@/components/Button";
 import Footer from "@/components/Footer";
 import BandeauNews from "@/components/BandeauNews";
+import HomeMainCarrousel from "@/components/Carrousel/Home-main";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -23,9 +24,9 @@ export default function Page() {
 
       <section id="hero" className="flex min-h-[90dvh] max-w-[1100px] flex-1 items-center justify-center text-center mx-auto">
         <div className="w-full space-y-8 mx-auto">
-          <div className="flex flex-col items-center justify-center space-y-1.5 gap-[24px]">
+          <div className="flex flex-col items-center mt-[-100px] justify-center space-y-1.5 gap-[24px]">
             <BlurFade>
-              <div className="w-full lg:w-max text-center"><span className="text-noir text-3xl lg:text-5xl font-bold uppercase lg:leading-[88px] dark:text-blanc">*Hi I’M </span><span className="text-[#e1e1e1] text-3xl lg:text-5xl font-bold uppercase lg:leading-[88px] dark:text-gris_2">Clément saint-hilaire</span></div>
+              <div className="w-full lg:w-max text-center"><span className="text-noir text-3xl lg:text-5xl font-bold uppercase lg:leading-[88px] dark:text-blanc"><span className="text-bleu">*</span>Hi I’M </span><span className="text-[#e1e1e1] text-3xl lg:text-5xl font-bold uppercase lg:leading-[88px] dark:text-gris_2">Clément saint-hilaire</span></div>
             </BlurFade>
             <BlurFade>
               <div className="grow shrink basis-0 text-center text-[#75757a] text-[17px] font-normal lg:text-[21px] font-normal leading-7">I’m a passionate creatif guy that love make cool stuff.<br/>Discover here my creations & collaborations</div>
@@ -58,8 +59,16 @@ export default function Page() {
         </div>
       </section>
 
+      <section id="Main Carousel"   className="hidden md:block">
+        <div className="space-y-12 w-full pb-12 mt-[-100px] w-full max-w-[1900px] mx-auto">
+            <BlurFade>
+              <HomeMainCarrousel/>
+            </BlurFade>
+        </div>
+      </section>
+
       <section id="projects">
-        <div className="space-y-12 w-full pb-12 mt-[-50px] max-w-[1100px] mx-auto">
+        <div className="space-y-12 w-full pb-12 max-w-[1100px] mx-auto">
             <BlurFade>
               <Bento/>
             </BlurFade>
