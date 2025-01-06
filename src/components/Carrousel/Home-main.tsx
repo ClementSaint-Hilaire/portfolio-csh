@@ -24,7 +24,7 @@ const HomeMainCarrousel = () => {
          <SwiperSlide>
           <a href="/design" className="flex items-center justify-center h-full">
             <Image
-                src="/home/MainBento.png" 
+                src="/home/MainBento.webp" 
                 alt="Discover the new Wattiz’ app. Design to enhance customer experience."
                 width={1800} 
                 height={1000} 
@@ -34,7 +34,7 @@ const HomeMainCarrousel = () => {
         <SwiperSlide>
           <a href="/" className="flex items-center justify-center h-full">
             <Image
-                src="/home/Wattiz.png" 
+                src="/home/Wattiz.webp" 
                 alt="Discover the new Wattiz’ app. Design to enhance customer experience."
                 width={1800} 
                 height={1000} 
@@ -44,7 +44,7 @@ const HomeMainCarrousel = () => {
         <SwiperSlide>
           <a href="/https://csh.beehiiv.com/" className="flex items-center justify-center h-full">
             <Image
-                src="/home/Newsletter.png" 
+                src="/home/Newsletter.webp" 
                 alt="Discover the weekly tech informative newsletter."
                 width={1800} 
                 height={1000} 
@@ -54,7 +54,7 @@ const HomeMainCarrousel = () => {
         <SwiperSlide>
           <a href="https://discord.gg/EPBXReEWak" target="_blank" className="flex items-center justify-center h-full">
             <Image
-                src="/home/Discord.png" 
+                src="/home/Discord.webp" 
                 alt="Join the Community Discord."
                 width={1800} 
                 height={1000} 
