@@ -15,7 +15,7 @@ export default function RecentWorkCarousel() {
 
   return (
     <div className="max-w mx-auto py-8 gap-4">
-      <div className="flex mx-auto items-center justify-between items-center max-w-[1100px] py-8">  
+      <div className="flex mx-auto items-center gap-4 justify-between items-center max-w-[1100px] py-8">  
             <h2 className=" text-[16px] lg:text-[26px] font-semibold text-gris_2">
                 <span className="text-bleu">Recent work.</span> made by csh
             </h2>
