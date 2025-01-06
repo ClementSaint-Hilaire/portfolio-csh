@@ -1,11 +1,8 @@
 "use client";
 import BlurFade from "@/components/magicui/blur-fade";
-import BlurFadeText from "@/components/magicui/blur-fade-text";
 import Particles from "@/components/magicui/particles";
 import { Bento } from "@/components/BentoHome";
-import { ContactBouton } from "@/components/Button";
 import Footer from "@/components/Footer";
-import BandeauNews from "@/components/BandeauNews";
 import HomeMainCarrousel from "@/components/Carrousel/Home-main";
 import AboutSection from "@/components/About";
 
@@ -21,7 +18,6 @@ export default function Page() {
             color={"currentColor"}
             refresh
         />
-        {/* <BandeauNews/> */}
 
       <section id="hero" className="flex min-h-[90dvh] max-w-[1100px] flex-1 items-center justify-center text-center mx-auto">
         <div className="w-full space-y-8 mx-auto">
