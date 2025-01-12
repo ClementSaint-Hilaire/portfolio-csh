@@ -6,22 +6,26 @@ import BlurFade from "./magicui/blur-fade";
 const WhatIDoSection = () => {
   const [activeSection, setActiveSection] = useState("Create butilful designs");
 
-  const content: { [key: string]: { text: string; images: string[] } } = {
+  const content: { [key: string]: { text: string; images: string[]; darkImages: string[]} } = {
     "Create butilful designs": {
         text: "My main expertise is creating beatifull website, app and every kind of digital creations.",
         images: ["/whatido/design1.webp", "/whatido/design2.webp", "/whatido/design3.webp"],
+        darkImages: ["/whatido/design1-dark.webp", "/whatido/design2-dark.webp", "/whatido/design3-dark.webp"],
     },
     "Build awsome website": {
         text: "Drawing wasn’t enought for me, so I worked on how to make my design real, by learning code & CMS.",
         images: ["/whatido/build1.webp", "/whatido/build2.webp", "/whatido/build3.webp"],
+        darkImages: ["/whatido/build1-dark.webp", "/whatido/build2-dark.webp", "/whatido/build3-dark.webp"],
     },
     "Share & Help": {
         text: "I learned a lot thx to people who shared, so as a return, I’m sharing my tools, templates & knowledge for free.",
         images: ["/whatido/share1.webp", "/whatido/share2.webp", "/whatido/share3.webp"],
+        darkImages: ["/whatido/share1-dark.webp", "/whatido/share2-dark.webp", "/whatido/share3-dark.webp"],
     },
     "Write about the future": { 
       text: "Writing is an essential part of my process. You can find most of it on my blog, newsletter & Discord.",
       images: ["/whatido/write1.webp", "/whatido/write2.webp", "/whatido/share3.webp"],
+      darkImages: ["/whatido/write1-dark.webp", "/whatido/write2-dark.webp", "/whatido/share3-dark.webp"],
     },
   };
 
@@ -78,8 +82,8 @@ const WhatIDoSection = () => {
                 />
             </div>
 
-            {/* Affichage des images */}
-            <div className="grid grid-rows-2 md:grid-flow-col gap-4 mt-8">
+           {/* Affichage des images */}
+           <div className="grid grid-rows-2 md:grid-flow-col gap-4 mt-8">
                 {content[activeSection].images.map((image, index) => (
                 <div
                     key={index}
@@ -88,7 +92,13 @@ const WhatIDoSection = () => {
                     <img
                     src={image}
                     alt={`Image ${index + 1}`}
-                    className="w-full h-auto object-cover rounded-lg"
+                    className="w-full h-auto object-cover rounded-lg dark:hidden"
+                    />
+                    {/* Images pour le mode sombre */}
+                    <img
+                    src={content[activeSection].darkImages[index]}
+                    alt={`Image ${index + 1} (dark mode)`}
+                    className="w-full h-auto object-cover rounded-lg hidden dark:block"
                     />
                 </div>
                 ))}
