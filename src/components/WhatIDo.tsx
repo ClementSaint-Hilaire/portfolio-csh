@@ -6,15 +6,23 @@ import BlurFade from "./magicui/blur-fade";
 const WhatIDoSection = () => {
   const [activeSection, setActiveSection] = useState("Create butilful designs");
 
-  const content: { [key: string]: string } = {
-    "Create butilful designs": 
-        "My main expertise is creating beatifull website, app and every kind of digital creations.",
-    "Build awsome website":
-        "Drawing wasn’t enought for me, so I worked on how to make my design real, by learning code & CMS.",
-    "Share & Help":
-        "I learned a lot thx to people who shared, so as a return, I’m sharing my tools, templates & knowledge for free.",
-    "Write about the future":
-      "Writing is an essential part of my process. You can find most of it on my blog, newsletter & Discord.",
+  const content: { [key: string]: { text: string; images: string[] } } = {
+    "Create butilful designs": {
+        text: "My main expertise is creating beatifull website, app and every kind of digital creations.",
+        images: ["/whatido/design1.webp", "/whatido/design2.webp", "/whatido/design3.webp"],
+    },
+    "Build awsome website": {
+        text: "Drawing wasn’t enought for me, so I worked on how to make my design real, by learning code & CMS.",
+        images: ["/whatido/build1.webp", "/whatido/build2.webp", "/whatido/build3.webp"],
+    },
+    "Share & Help": {
+        text: "I learned a lot thx to people who shared, so as a return, I’m sharing my tools, templates & knowledge for free.",
+        images: ["/whatido/share1.webp", "/whatido/share2.webp", "/whatido/share3.webp"],
+    },
+    "Write about the future": { 
+      text: "Writing is an essential part of my process. You can find most of it on my blog, newsletter & Discord.",
+      images: ["/whatido/write1.webp", "/whatido/write2.webp", "/whatido/share3.webp"],
+    },
   };
 
   return (
@@ -22,12 +30,12 @@ const WhatIDoSection = () => {
 
       <div className="w-full">
         <div className="h-[88px] justify-center mb-[64px]">
-            <div className="w-full text-center"><span className="text-currentColor text-[82px] font-semibold leading-[88px]">Discover </span><span className="text-[#e1e1e1] text-[82px] font-semibold leading-[88px] dark:text-gris_2">what I do</span></div>
+            <div className="w-full text-center"><span className="text-currentColor text-[42px] md:text-[82px] font-semibold leading-[88px]">Discover </span><span className="text-[#e1e1e1] text-[42px] font-semibold leading-[45px] md:text-[82px] md:leading-[88px] dark:text-gris_2">what I do</span></div>
         </div>
 
-        <div className="grow shrink basis-0 flex-col justify-between w-full items-start gap-11 inline-flex items-center">
-  <div className="h-12 flex-col justify-start items-center gap-4 inline-flex">
-    <div className="self-stretch justify-between w-full items-center inline-flex gap-8 overflow-scroll scroll-smooth">
+        <div className="grow shrink basis-0 flex-col justify-between w-full  items-start gap-11 inline-flex items-center">
+  <div className="h-12 flex-col w-full justify-start items-center gap-4 inline-flex ">
+    <div className="grow shrink basis-0 flex self-stretch justify-between w-full items-center inline-flex gap-8 overflow-scroll scroll-smooth">
       {Object.keys(content).map((key) => (
         <div
           key={key}
@@ -61,12 +69,32 @@ const WhatIDoSection = () => {
     </div>
   </div>
   <BlurFade>
-    <div
-      className="text-center text-black text-[21px] font-semibold leading-7 dark:text-blanc"
-      dangerouslySetInnerHTML={{ __html: content[activeSection] }}
-    ></div>
-  </BlurFade>
-</div>
+            <div className="text-center text-black text-[21px] font-semibold leading-7 dark:text-blanc">
+                {/* Contenu HTML dynamique */}
+                <div
+                dangerouslySetInnerHTML={{
+                    __html: content[activeSection].text,
+                }}
+                />
+            </div>
+
+            {/* Affichage des images */}
+            <div className="grid grid-rows-2 md:grid-flow-col gap-4 mt-8">
+                {content[activeSection].images.map((image, index) => (
+                <div
+                    key={index}
+                    className={`items-center rounded-lg ${index === 0 ? 'row-span-2' : 'col-span-1'}`}
+                    >
+                    <img
+                    src={image}
+                    alt={`Image ${index + 1}`}
+                    className="w-full h-auto object-cover rounded-lg"
+                    />
+                </div>
+                ))}
+            </div>
+          </BlurFade>
+    </div>
         
       </div>
     </div>

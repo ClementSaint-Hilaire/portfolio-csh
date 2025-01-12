@@ -26,7 +26,7 @@ const AboutSection = () => {
           <div className="self-stretch text-bleu text-xs font-normal leading-tight">
             ABOUT
           </div>
-          <div className="self-stretch text-black text-[42px] md:text-[82px] font-semibold leading-[88px] dark:text-blanc">
+          <div className="self-stretch text-black text-[42px] font-semibold leading-[45px] md:text-[82px] md:leading-[88px] dark:text-blanc">
             Who am I
           </div>
         </div>
