@@ -8,15 +8,15 @@ const HeroSection = () => {
   const content: { [key: string]: string } = {
     "For anyone" : 
       `<span>Hello there, I’m 
-      <img src="/home/csh.png"
+      <img src="/Home/csh.png"
         class="responsive-image" 
         alt="icon" 
       />
       <span style="color: #0a84ff;">Clément Saint-Hilaire</span> 
       a french 
-      <img src="/home/french.png" alt="icon"class="responsive-image2"/>
+      <img src="/Home/french.png" alt="icon"class="responsive-image2"/>
       digital creator who cares about making beautifull 
-      <img src="/home/beautiful.png" alt="icon" class="responsive-image2"/>
+      <img src="/Home/beautiful.png" alt="icon" class="responsive-image2"/>
       things that help people.
       </span>`,
     designer:
