@@ -3,9 +3,9 @@ import BlurFade from "@/components/magicui/blur-fade";
 import Particles from "@/components/magicui/particles";
 import { Bento } from "@/components/BentoHome";
 import Footer from "@/components/Footer";
-import HomeMainCarrousel from "@/components/Carrousel/Home-main";
 import AboutSection from "@/components/About";
 import WhatIDoSection from "@/components/WhatIDo";
+import Image from "next/image";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -34,11 +34,11 @@ export default function Page() {
               <div className="self-stretch justify-center items-center gap-6 inline-flex flex flex-col lg:flex-row">
                 <a className="w-[200px] rounded-xl flex-col justify-center items-center gap-2.5 inline-flex" href="/design">
                   <div className="self-stretch h-14 px-5 py-3 bg-neutral-100 rounded-xl justify-between items-center inline-flex">
-                    <div className="mx-auto text-noir text-[17px] font-bold leading-normal">Mes Créations</div>
+                    <div className="mx-auto text-noir text-[17px] font-bold leading-normal">Creations</div>
                   </div>
                 </a>
                 <a href="mailto:clement.sainthilaire.pro@gmail.com?subject='Prénom Nom | Premier contact pour projet'&body=''" className="w-[200px] h-14 px-4 py-2 bg-noir rounded-xl justify-center items-center gap-2 flex">
-                  <div className="text-[#f5f5f7] text-[17px] font-bold leading-normal">Me contacter</div>
+                  <div className="text-[#f5f5f7] text-[17px] font-bold leading-normal">Contact me</div>
                   <div className="w-6 h-6 relative rounded overflow-hidden">
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g id="mail">
@@ -60,7 +60,14 @@ export default function Page() {
       <section id="Main Carousel"   className="hidden md:block">
         <div className="space-y-12 w-full pb-12 mt-[-100px] w-full max-w-[1900px] mx-auto">
             <BlurFade>
-              <HomeMainCarrousel/>
+            <a href="/design" className="flex items-center justify-center h-full">
+              <Image
+                  src="/Home/MainBento.webp" 
+                  alt="Discover the new Wattiz’ app. Design to enhance customer experience."
+                  width={1800} 
+                  height={1000} 
+              />
+          </a>
             </BlurFade>
         </div>
       </section>
