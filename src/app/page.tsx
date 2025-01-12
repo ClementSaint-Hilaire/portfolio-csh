@@ -5,6 +5,7 @@ import { Bento } from "@/components/BentoHome";
 import Footer from "@/components/Footer";
 import HomeMainCarrousel from "@/components/Carrousel/Home-main";
 import AboutSection from "@/components/About";
+import WhatIDoSection from "@/components/WhatIDo";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -68,6 +69,14 @@ export default function Page() {
           <div className="space-y-12 w-full pb-12 max-w-[1100px] mx-auto">
             <BlurFade>
               <AboutSection/>
+            </BlurFade>
+          </div>
+      </section>
+
+      <section id="what_i_do">
+          <div className="space-y-12 w-full pb-12 max-w-[1100px] mx-auto">
+            <BlurFade>
+              <WhatIDoSection/>
             </BlurFade>
           </div>
       </section>
