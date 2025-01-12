@@ -2,6 +2,7 @@
 "use client";
 import { useState } from "react";
 import BlurFade from "./magicui/blur-fade";
+import Image from "next/image";
 
 const WhatIDoSection = () => {
   const [activeSection, setActiveSection] = useState("Create butilful designs");
@@ -63,7 +64,7 @@ const WhatIDoSection = () => {
             >
               <path
                 d="M0 1H250"
-                stroke={activeSection === key ? "currentColor" : "#75757A"} /* Couleur dynamique */
+                stroke={activeSection === key ? "currentColor" : "#75757A"}
                 strokeWidth="1.5"
               />
             </svg>
@@ -89,16 +90,20 @@ const WhatIDoSection = () => {
                     key={index}
                     className={`items-center rounded-lg ${index === 0 ? 'row-span-2' : 'col-span-1'}`}
                     >
-                    <img
+                    <Image
                     src={image}
                     alt={`Image ${index + 1}`}
                     className="w-full h-auto object-cover rounded-lg dark:hidden"
+                    width={780}
+                    height={780}
                     />
                     {/* Images pour le mode sombre */}
-                    <img
+                    <Image
                     src={content[activeSection].darkImages[index]}
                     alt={`Image ${index + 1} (dark mode)`}
                     className="w-full h-auto object-cover rounded-lg hidden dark:block"
+                    width={780}
+                    height={780}
                     />
                 </div>
                 ))}
