@@ -20,7 +20,7 @@ export default function Page() {
       </section>
 
       <section id="mainBento">
-        <div className="space-y-12 w-full pb-[128px] mt-[-100px] w-full max-w-[1900px] mx-auto">
+        <div className="space-y-12 w-full pb-[128px] mt-[32px] md:mt-[-100px] w-full max-w-[1900px] mx-auto">
             <BlurFade>
               <HomeMainBento/>
             </BlurFade>
@@ -28,7 +28,7 @@ export default function Page() {
       </section>
 
       <section id="services">
-          <div className="space-y-12 w-full pb-[128px] pt-[128px] max-w-[1100px] mx-auto">
+          <div className="space-y-12 w-full max-w-[1100px] mx-auto">
             <BlurFade>
               <WhatIDoSection/>
             </BlurFade>
