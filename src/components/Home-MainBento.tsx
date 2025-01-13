@@ -36,7 +36,7 @@ export function HomeMainBento() {
                         </a>
                         <div className="w-full gap-[5px] h-auto flex flex-col">
 
-                            <a className="flex flex-col justify-center items-center w-full h-1/2 rounded-xl bg-[#FADECA]" target="_blank" href="https://aclstudio.fr">
+                            <a className="flex flex-col justify-center items-center w-full h-1/2 rounded-xl bg-[#FADECA]" target="_blank" href="https://www.figma.com/proto/XZuro2IluwzsbvZLYxi5jT/aclstudio.fr?page-id=3%3A2&node-id=54-14&viewport=138%2C159%2C0.04&t=VCAZN2fCFt8GD2wK-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=54%3A14&hotspot-hints=0">
                                 <Image
                                     src="/home/bentoHome/6.webp"
                                     alt="Picture of the author"
@@ -88,7 +88,7 @@ export function HomeMainBento() {
 
                 <div className="w-full md:w-1/3 h-auto gap-[5px] flex flex-col">
 
-                    <a className="w-full h-2/3 rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_blank" href="https://skorpia.fr">
+                    <a className="w-full h-2/3 rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_blank" href="https://www.figma.com/proto/y7f0t63Nb2XHy5HHo38Jw2/Skorpia.fr-3.0?page-id=1%3A3&node-id=2-3&viewport=426%2C105%2C0.08&t=rVXnUtPTU2axXnly-1&scaling=scale-down-width&content-scaling=fixed&hotspot-hints=0">
                         <Image
                             src="/Home/bentoHome/4.webp"
                             alt="Picture of the author"
