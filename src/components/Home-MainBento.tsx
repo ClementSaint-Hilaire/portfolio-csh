@@ -16,7 +16,7 @@ export function HomeMainBento() {
 
                     <a className="w-full h-auto rounded-xl bg-blanc dark:bg-noir" target="_blank" href="https://discord.gg/EPBXReEWak">
                         <Image
-                            src="/home/bentoHome/1.webp"
+                            src="/Home/bentoHome/1.webp"
                             alt="Picture of the author"
                             width={640}
                             height={295}
@@ -27,7 +27,7 @@ export function HomeMainBento() {
 
                         <a className="w-full h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_blank" href="https://medium.com/@clement.sainthilaire.app">
                             <Image
-                                src="/home/bentoHome/5.webp"
+                                src="/Home/bentoHome/5.webp"
                                 alt="Picture of the author"
                                 width={640}
                                 height={295}
@@ -38,7 +38,7 @@ export function HomeMainBento() {
 
                             <a className="flex flex-col justify-center items-center w-full h-1/2 rounded-xl bg-[#FADECA]" target="_blank" href="https://aclstudio.fr">
                                 <Image
-                                    src="/home/bentoHome/6.webp"
+                                    src="/Home/bentoHome/6.webp"
                                     alt="Picture of the author"
                                     width={112}
                                     height={112}
@@ -64,7 +64,7 @@ export function HomeMainBento() {
                         </a>
                         <a className="w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_blank" href="https://www.figma.com/proto/7lRkhdwfygsZoUGkFKA6vf/Wikipedia-%7C-Website-Design?page-id=1%3A4&node-id=4-37&p=f&viewport=1188%2C150%2C0.25&t=tRGsUg6npXm8goPs-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4%3A37&hotspot-hints=0">
                             <Image
-                                src="/home/bentoHome/3.webp"
+                                src="/Home/bentoHome/3.webp"
                                 alt="Picture of the author"
                                 width={315}
                                 height={235}
