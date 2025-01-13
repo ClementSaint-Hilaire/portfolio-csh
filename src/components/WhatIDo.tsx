@@ -34,8 +34,8 @@ const WhatIDoSection = () => {
     <div className=" mb-[200px] mx-auto w-full max-w-[1400px]">
 
       <div className="w-full">
-        <div className="h-[88px] justify-center mb-[64px]">
-            <div className="w-full text-center"><span className="text-currentColor text-[42px] md:text-[82px] font-semibold leading-[88px]">Discover </span><span className="text-[#e1e1e1] text-[42px] font-semibold leading-[45px] md:text-[82px] md:leading-[88px] dark:text-gris_2">what I do</span></div>
+        <div className="h-[88px] justify-center md:mb-[64px]">
+            <div className="w-full text-center"><span className="text-currentColor text-[32px] leading-[35px] md:text-[82px] font-semibold md:leading-[88px]">Discover </span><span className="text-[#e1e1e1] text-[32px] font-semibold leading-[35px] md:text-[82px] md:leading-[88px] dark:text-gris_2">what I do</span></div>
         </div>
 
       <div className="grow shrink basis-0 flex-col justify-between w-full items-start gap-11 inline-flex items-center">

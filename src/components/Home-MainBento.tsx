@@ -8,7 +8,7 @@ import Image from "next/image";
 export function HomeMainBento() {
   return (
     <div className="w-full max-w-[1920px] h-auto mx-auto">
-        <div className="w-full max-w-[1920px] gap-[5px] h-auto md:h-[1080px] flex flex-col">
+        <div className="w-full max-w-[1920px] gap-[5px] h-auto flex flex-col">
             
             <div className="w-full gap-[5px] h-auto flex-col flex md:flex-row">
 
