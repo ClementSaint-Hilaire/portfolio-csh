@@ -14,18 +14,18 @@ export function HomeMainBento() {
 
                 <div className="w-full md:w-1/3 h-auto gap-[5px] flex flex-col">
 
-                    <div className="w-full h-auto rounded-xl bg-blanc dark:bg-noir">
+                    <a className="w-full h-auto rounded-xl bg-blanc dark:bg-noir" target="_blank" href="https://discord.gg/EPBXReEWak">
                         <Image
                             src="/home/bentoHome/1.webp"
                             alt="Picture of the author"
                             width={640}
                             height={295}
                         />
-                    </div>
+                    </a>
 
                     <div className="w-full gap-[5px] h-auto flex">
 
-                        <div className="w-full h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden">
+                        <a className="w-full h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_blank" href="https://medium.com/@clement.sainthilaire.app">
                             <Image
                                 src="/home/bentoHome/5.webp"
                                 alt="Picture of the author"
@@ -33,10 +33,10 @@ export function HomeMainBento() {
                                 height={295}
                                 className="object-cover w-full h-full"
                             />
-                        </div>
+                        </a>
                         <div className="w-full gap-[5px] h-auto flex flex-col">
 
-                            <div className="flex flex-col justify-center items-center w-full h-1/2 rounded-xl bg-[#FADECA]">
+                            <a className="flex flex-col justify-center items-center w-full h-1/2 rounded-xl bg-[#FADECA]" target="_blank" href="https://aclstudio.fr">
                                 <Image
                                     src="/home/bentoHome/6.webp"
                                     alt="Picture of the author"
@@ -44,10 +44,10 @@ export function HomeMainBento() {
                                     height={112}
                                 />
                                 <p className="mt-[-12px] text-[21px] font-black text-black italic"><span className="not-italic text-[#FF4D06]">ACL </span>STUDIO</p>
-                            </div>
-                            <div className="flex justify-center items-center w-full h-1/2 rounded-xl bg-blanc dark:bg-noir overflow-hidden">
+                            </a>
+                            <a className="flex justify-center items-center w-full h-1/2 rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_blank" href="https://www.notion.so/clementsainthilaire/csh-Toolbox-bb51e8ab976d494192380fa95fd9fc08?pvs=4">
                                 <OrbitingCirclesTools/>
-                            </div>
+                            </a>
 
                         </div>
 
@@ -58,11 +58,11 @@ export function HomeMainBento() {
                 <div className="w-full md:w-1/3 h-auto gap-[5px] flex flex-col">
 
                     <div className="w-full h-1/3 gap-[5px] flex">
-                        <div className="flex flex-col justify-center items-center w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir gap-[4px]">
+                        <a className="flex flex-col justify-center items-center w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir gap-[4px]" href="/design">
                             <NumberTickerDesigns/>
                             <p className="mt-[-16px] text-currentColor text-[21px] font-semibold leading-7">Digital creations</p>
-                        </div>
-                        <div className="w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden">
+                        </a>
+                        <a className="w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_blank" href="https://www.figma.com/proto/7lRkhdwfygsZoUGkFKA6vf/Wikipedia-%7C-Website-Design?page-id=1%3A4&node-id=4-37&p=f&viewport=1188%2C150%2C0.25&t=tRGsUg6npXm8goPs-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4%3A37&hotspot-hints=0">
                             <Image
                                 src="/home/bentoHome/3.webp"
                                 alt="Picture of the author"
@@ -70,7 +70,7 @@ export function HomeMainBento() {
                                 height={235}
                                 className="object-cover w-full h-full"
                             />
-                        </div>
+                        </a>
                     </div>
 
                     <div className="flex justify-center items-center w-full h-2/3 min-h-[350px] rounded-xl bg-blanc dark:bg-noir">
@@ -88,7 +88,7 @@ export function HomeMainBento() {
 
                 <div className="w-full md:w-1/3 h-auto gap-[5px] flex flex-col">
 
-                    <div className="w-full h-2/3 rounded-xl bg-blanc dark:bg-noir overflow-hidden">
+                    <a className="w-full h-2/3 rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_blank" href="https://skorpia.fr">
                         <Image
                             src="/Home/bentoHome/4.webp"
                             alt="Picture of the author"
@@ -96,10 +96,10 @@ export function HomeMainBento() {
                             height={575}
                             className="object-cover w-full h-full"
                         />
-                    </div>
+                    </a>
 
                     <div className="w-full h-1/3 gap-[5px] flex">
-                        <div className="w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden">
+                        <a className="w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" href="/design-system">
                         <Image
                                 src="/Home/bentoHome/9.webp"
                                 alt="Picture of the author"
@@ -107,8 +107,8 @@ export function HomeMainBento() {
                                 height={255}
                                 className="object-cover w-full h-full"
                             />
-                        </div>
-                        <div className="w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden">
+                        </a>
+                        <a className="w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_black" href="https://medium.com/@clement.sainthilaire.app">
                             <Image
                                 src="/Home/bentoHome/10.webp"
                                 alt="Picture of the author"
@@ -116,7 +116,7 @@ export function HomeMainBento() {
                                 height={235}
                                 className="object-cover w-full h-full"
                             />
-                        </div>
+                        </a>
                     </div>
 
                 </div>
@@ -126,7 +126,7 @@ export function HomeMainBento() {
 
             <div className="w-full gap-[5px] h-auto hidden md:flex">
 
-                <div className="w-2/6 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden">
+                <a className="w-2/6 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_blank" href="https://csh.beehiiv.com/">
                     <Image
                         src="/Home/bentoHome/11.webp"
                         alt="Picture of the author"
@@ -134,8 +134,8 @@ export function HomeMainBento() {
                         height={260}
                         className="object-cover w-full h-full"
                     />
-                </div>
-                <div className="w-1/6 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden">
+                </a>
+                <a className="w-1/6 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" href="https://www.figma.com/proto/82QxYOTOWLq6VQUztNJWry/Wattiz-%7C-App-design?page-id=4%3A3&node-id=654-7191&p=f&viewport=-2595%2C-218%2C0.59&t=8xRuFvl0lhRLPKWr-9&scaling=scale-down&content-scaling=fixed&starting-point-node-id=654%3A7191&hotspot-hints=0&show-proto-sidebar=1">
                     <Image
                         src="/Home/bentoHome/12.webp"
                         alt="Picture of the author"
@@ -143,8 +143,8 @@ export function HomeMainBento() {
                         height={260}
                         className="object-cover w-full h-full"
                     />
-                </div>
-                <div className="w-2/6 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden">
+                </a>
+                <a className="w-2/6 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" href="/icons">
                     <Image
                         src="/Home/bentoHome/13.webp"
                         alt="Picture of the author"
@@ -152,8 +152,8 @@ export function HomeMainBento() {
                         height={260}
                         className="object-cover w-full h-full"
                     />
-                </div>
-                <div className="w-1/6 h-auto rounded-xl bg-blanc dark:bg-noir">
+                </a>
+                <a className="w-1/6 h-auto rounded-xl bg-blanc dark:bg-noir" target="_target" href="https://medium.com/@clement.sainthilaire.app">
                     <Image
                         src="/Home/bentoHome/14.webp"
                         alt="Picture of the author"
@@ -161,7 +161,7 @@ export function HomeMainBento() {
                         height={260}
                         className="object-cover w-full h-full"
                     />
-                </div>
+                </a>
 
             </div>
 
