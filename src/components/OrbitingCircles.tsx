@@ -2,8 +2,8 @@ import OrbitingCircles from "@/components/magicui/orbiting-circles";
 
 export function OrbitingCirclesTools() {
   return (
-    <div className="absolute z-10 top-[45px] flex h-[300px] w-full flex-col items-center justify-center overflow-hidden rounded-lg">
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-4xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
+    <div className="relative flex h-[200px] w-full flex-col items-center justify-center overflow-hidden rounded-lg">
+      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-2xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
         Toolbox
       </span>
 
@@ -12,7 +12,7 @@ export function OrbitingCirclesTools() {
         className="size-[30px] border-none bg-transparent"
         duration={20}
         delay={20}
-        radius={50}
+        radius={40}
       >
         <Icons.openai />
       </OrbitingCircles>
@@ -20,23 +20,23 @@ export function OrbitingCirclesTools() {
         className="size-[30px] border-none bg-transparent"
         duration={20}
         delay={10}
-        radius={50}
+        radius={40}
       >
         <Icons.arc />
       </OrbitingCircles>
 
       {/* Outer Circles (reverse) */}
       <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        radius={120}
+        className="size-[30px] border-none bg-transparent"
+        radius={80}
         duration={20}
         reverse
       >
         <Icons.figma />
       </OrbitingCircles>
       <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        radius={120}
+        className="size-[30px] border-none bg-transparent"
+        radius={80}
         duration={20}
         delay={20}
         reverse

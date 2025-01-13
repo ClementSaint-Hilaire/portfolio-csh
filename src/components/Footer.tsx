@@ -43,7 +43,7 @@ return (
         </div>
     </div>
     <div className="w-full max-w-[1100px] mt-50px md:mt-[100px] justify-between items-center inline-flex">
-        <div className="text-[#75757a] text-xs font-normal leading-tight">© 2024 Clément Saint-Hilaire. All Rights Reserved.</div>
+        <div className="text-[#75757a] text-xs font-normal leading-tight">© 2025 Clément Saint-Hilaire. All Rights Reserved.</div>
         <div className="px-5 py-2.5 bg-[#f5f5f7] rounded-[999px] justify-center items-center gap-2.5 hidden md:flex dark:bg-[#1D1D1F]">
             <div className="text-[#1d1d1f] text-xs font-normal leading-tight dark:text-[#75757a]">made by csh</div>
         </div>

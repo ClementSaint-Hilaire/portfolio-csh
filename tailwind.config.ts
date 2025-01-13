@@ -79,6 +79,9 @@ const config = {
         'orange': '#FF4D06',
         'rouge': '#D62929',
 
+        'blue-start': 'rgba(10, 132, 255, 1)',
+        'blue-end': 'rgba(202, 232, 250, 1)',
+
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
 

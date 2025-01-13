@@ -4,7 +4,7 @@ import { BentoCardTwo, BentoGridTwo } from "@/components/magicui/bento-uikitTwo"
 const features = [
   {
     name: "Light & Dark",
-    description: "(comming soon)",
+    description: "Embrace the dark side",
     className: "col-span-3 lg:col-span-1",
     background: ( 
       <img src="/design-system/bento/dark.png"/>
@@ -12,7 +12,7 @@ const features = [
   },
   {
     name: "Juste les bon boutons",
-    description: "Taille idéale",
+    description: "Size matters",
     className: "col-span-3 lg:col-span-2",
     background: (
       <img src="/design-system/bento/button.png"/>
@@ -20,7 +20,7 @@ const features = [
   },
   {
     name: "Juste les bon toggles",
-    description: "facile à clicker",
+    description: "Ease clic",
     className: "col-span-3 lg:col-span-2",
     background: (
       <img src="/design-system/bento/toggle.png"/>
@@ -28,7 +28,7 @@ const features = [
   },
   {
     name: "Ez custom",
-    description: "Chaque composant est conçu pour être entièrement customisable.",
+    description: "Each component is crafted to be 100% customisable",
     className: "col-span-3 lg:col-span-1",
     background: (
       <img src="/design-system/bento/custom.png"/>
@@ -43,7 +43,7 @@ const features = [
     ),
   },
   {
-    name: "Fonctionne en harmonie avec csh Icons et csh UI landing kit",
+    name: "Work in harmony with csh Icons and csh UI landing kit",
     description: "",
     className: "col-span-3 lg:col-span-2",
     background: (
