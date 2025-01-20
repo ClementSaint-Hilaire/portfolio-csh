@@ -7,10 +7,9 @@ import 'swiper/css/navigation';
 
 export default function GraphicDesignCarousel() {
   const graphicSlides = [
-    { id: 1, title: 'Arc commpagny sum', bio: 'Annual review catalog', href: '/design', img: '/design/arc.png'},
+    { id: 1, title: 'Arc commpagny sum', bio: 'Annual review catalog', href: '/design/Arc.pdf', img: '/design/arc.png'},
     { id: 2, title: 'Beauregard 2026', bio: 'Musical festival poster', href: '/design', img: '/design/beauregard2026.png'},
     { id: 3, title: 'Modern Bauhaus', bio: 'Modern Bauhaus poster', href: '/design', img: '/design/bauhaus.png'},
-    { id: 4, title: 'Arcane New Typo', bio: 'New Typo Arcane poster', href: '/design', img: '/design/arcane.png'},
 
   ];
 

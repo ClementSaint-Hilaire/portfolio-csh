@@ -7,9 +7,9 @@ import 'swiper/css/navigation';
 
 export default function AppDesignCarousel() {
   const appSlides = [
-    { id: 1, title: 'Wattiz', bio: 'Empower the ride', href: '/design', img: '/design/wattiz.png'},
-    { id: 2, title: 'Retro Pizza', bio: 'Street good', href: '/design', img: '/design/pizza.png'},
-    { id: 3, title: 'eMusic', bio: 'Musical freedom at your hand', href: '/design', img: '/design/emusic.png'},
+    { id: 1, title: 'Wattiz', bio: 'Empower the ride', href: 'https://www.figma.com/proto/82QxYOTOWLq6VQUztNJWry/Wattiz-%7C-App-design?page-id=4%3A3&node-id=654-7191&p=f&viewport=-2595%2C-218%2C0.59&t=8xRuFvl0lhRLPKWr-9&scaling=scale-down&content-scaling=fixed&starting-point-node-id=654%3A7191&hotspot-hints=0&show-proto-sidebar=1', img: '/design/wattiz.png'},
+    { id: 2, title: 'Retro Pizza', bio: 'Street good', href: 'https://www.figma.com/proto/De60O2FuA79yylE7FGMHeZ/retropizza.com?page-id=15%3A694&node-id=22-161&viewport=555%2C172%2C0.24&t=DpJFLpJSlS5EIC1v-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=22%3A161&show-proto-sidebar=1', img: '/design/pizza.png'},
+    { id: 3, title: 'eMusic', bio: 'Musical freedom at your hand', href: 'https://www.figma.com/proto/dGE1rpK0I7CMW83wqPscPI/eMusic-%7C-Mobile-App?page-id=1%3A2&node-id=16-3132&viewport=862%2C110%2C0.06&t=1OfPegjjFqaeyDsv-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=16%3A3102&show-proto-sidebar=1', img: '/design/emusic.png'},
 
   ];
 

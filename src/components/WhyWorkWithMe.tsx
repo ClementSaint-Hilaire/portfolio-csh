@@ -30,14 +30,20 @@ const WhyWorkWithMe = () => {
   };
 
   return (
-  <div className="mb-[200px] mx-auto w-full max-w-[1400px] overflow-visible">
+
+
+
+
+
+    
+  <div className="mb-[200px] relative mx-auto w-full max-w-[1400px] overflow-visible h-auto">
     <div className="flex flex-col py-[5rem] md:flex-row w-full gap-[32px] overflow-visible">
       {/* Section Sticky */}
       <div className="flex flex-col items-center w-full md:w-1/2 overflow-visible	">
-        <div className="text-[32px] leading-[35px] md:text-[82px] font-semibold md:leading-[88px] text-currentColor h-full !sticky top-5">
+        <div className="text-[32px] leading-[35px] md:text-[82px] font-semibold md:leading-[88px] text-currentColor h-full relative !sticky top-5">
           Why <span className="text-[#e1e1e1] dark:text-gris_2">work with me ?</span>
         </div>
-      </div>
+      </div> 
   
       {/* Section Contenu défilant */}
       <div className="flex flex-col w-full md:w-1/2">

@@ -102,11 +102,8 @@ const icons = [
       </svg>
     ),
   },
-  
-
-
-  //works
 ];
+
 //Data travaux
 const works = [
   {
