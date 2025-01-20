@@ -60,7 +60,7 @@ export function HomeMainBento() {
                     <div className="w-full h-1/3 gap-[5px] flex">
                         <a className="flex flex-col justify-center items-center w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir gap-[4px]" href="/design">
                             <NumberTickerDesigns/>
-                            <p className="mt-[-16px] text-currentColor text-[21px] font-semibold leading-7">Digital creations</p>
+                            <p className="mt-[-16px] text-currentColor text-[21px] font-semibold leading-7 text-center">Digital creations</p>
                         </a>
                         <a className="w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_blank" href="https://www.figma.com/proto/7lRkhdwfygsZoUGkFKA6vf/Wikipedia-%7C-Website-Design?page-id=1%3A4&node-id=4-37&p=f&viewport=1188%2C150%2C0.25&t=tRGsUg6npXm8goPs-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4%3A37&hotspot-hints=0">
                             <Image

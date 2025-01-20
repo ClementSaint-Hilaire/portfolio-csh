@@ -55,6 +55,18 @@ const HeroSection = () => {
       });
     }
   };
+  const valueHandleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = -65;
+      const top = element.getBoundingClientRect().top + window.scrollY + offset;
+
+      window.scrollTo({
+        top,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <div className="justify-center items-center gap-32 inline-flex w-full max-w-[1400px] mx-auto">
 
@@ -68,7 +80,7 @@ const HeroSection = () => {
             <button className="text-[#75757a] text-[17px] font-semibold leading-normal transition"
               onClick={() => simpleHandleScroll("services")}>Services</button>
             <button className="text-[#75757a] text-[17px] font-semibold leading-normal transition"
-              onClick={() => simpleHandleScroll("")}>Values</button>
+              onClick={() => valueHandleScroll("values")}>Values</button>
             <button className="text-[#75757a] text-[17px] font-semibold leading-normal transition"
               onClick={() => simpleHandleScroll("")}>Background</button>
             <button className="text-[#75757a] text-[17px] font-semibold leading-normal transition"

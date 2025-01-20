@@ -30,44 +30,57 @@ const WhyWorkWithMe = () => {
   };
 
   return (
-<div className="mb-[200px] mx-auto w-full max-w-[1400px]">
-    <div className="flex flex-col md:flex-row w-full h-auto gap-[32px]">
-        {/* Section Sticky */}
-        <div className="flex flex-col items-center w-full h-auto md:w-1/2 sticky top-0">
-            <div className="text-[32px] leading-[35px] md:text-[82px] font-semibold md:leading-[88px] text-currentColor">
-                Why <span className="text-[#e1e1e1] dark:text-gris_2">work with me ?</span>
-            </div>
+  <div className="mb-[200px] mx-auto w-full max-w-[1400px] overflow-visible">
+    <div className="flex flex-col py-[5rem] md:flex-row w-full gap-[32px] overflow-visible">
+      {/* Section Sticky */}
+      <div className="flex flex-col items-center w-full md:w-1/2 overflow-visible	">
+        <div className="text-[32px] leading-[35px] md:text-[82px] font-semibold md:leading-[88px] text-currentColor h-full !sticky top-5">
+          Why <span className="text-[#e1e1e1] dark:text-gris_2">work with me ?</span>
         </div>
-
-        {/* Section Contenu défilant */}
-        <div className="flex flex-col w-full md:w-1/2">
-            {/* Section 01 */}
-            <div className="h-auto flex-col justify-center items-start inline-flex">
-                <div className="text-currentColor font-medium text-[21px] leading-[25px] md:text-[56px] md:leading-[70px]">
-                    01. Creativity
-                </div>
-                <div className="pl-8 flex justify-center inline-flex gap-8 w-full">
-                    <div className="md:h-full w-[0px] rounded-full origin-top-left border-[1px] border-gris_2"></div>
-                    <div className="w-full pt-4 text-gris_2 text-[17px] font-normal uppercase leading-normal">
-                        As a junior developer and designer, I specialize in creating engaging and innovative digital experiences...
-                    </div>
-                </div>
+      </div>
+  
+      {/* Section Contenu défilant */}
+      <div className="flex flex-col w-full md:w-1/2">
+        {/* Section 01 */}
+        <div className="flex flex-col justify-start">
+          <div className="text-currentColor font-medium text-[21px] leading-[25px] md:text-[56px] md:leading-[70px]">
+            01. Creativity
+          </div>
+          <div className="pl-8 flex justify-start gap-8">
+            <div className="md:h-full w-[2px] bg-gris_2"></div>
+            <div className="text-gris_2 text-[17px] font-normal uppercase leading-normal pb-24">
+              My innovative mindset and deep understanding of modern design principles allow me to create visually captivating and user-friendly solutions. By drawing inspiration from clean, timeless aesthetics, such as Swiss-inspired design, you ensure that every project is both unique and impactful, setting it apart from the competition.
             </div>
-            {/* Section 02 */}
-            <div className="h-auto flex-col justify-center items-start inline-flex">
-                <div className="text-currentColor font-medium text-[21px] leading-[25px] md:text-[56px] md:leading-[70px]">
-                    02. Flexibility
-                </div>
-                <div className="pl-8 flex justify-center inline-flex gap-8 w-full">
-                    <div className="md:h-full w-[0px] rounded-full origin-top-left border-[1px] border-gris_2"></div>
-                    <div className="w-full pt-4 text-gris_2 text-[17px] font-normal uppercase leading-normal">
-                        As a junior developer and designer, I specialize in creating engaging and innovative digital experiences...
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+  
+        {/* Section 02 */}
+        <div className="flex flex-col justify-start">
+          <div className="text-currentColor font-medium text-[21px] leading-[25px] md:text-[56px] md:leading-[70px]">
+            02. Flexibility
+          </div>
+          <div className="pl-8 flex justify-start gap-8">
+            <div className="md:h-full w-[2px] bg-gris_2"></div>
+            <div className="text-gris_2 text-[17px] font-normal uppercase leading-normal pb-24">
+              My ability to seamlessly adapt to different roles and responsibilities—whether it involves design, development, or communication, makes me a highly versatile professional. You excel in adjusting to new challenges, client expectations, and project dynamics, which ensures that I consistently meet goals, even in fast-paced or evolving environments.
+            </div>
+          </div>
+        </div>
+         {/* Section 03 */}
+         <div className="flex flex-col justify-start">
+          <div className="text-currentColor font-medium text-[21px] leading-[25px] md:text-[56px] md:leading-[70px]">
+            02. Professionalism
+          </div>
+          <div className="pl-8 flex justify-start gap-8">
+            <div className="md:h-full w-[2px] bg-gris_2"></div>
+            <div className="text-gris_2 text-[17px] font-normal uppercase leading-normal">
+              With a strong commitment to delivering high-quality work, I approach every project with diligence, organization, and effective communication. My ability to manage deadlines while maintaining attention to detail fosters trust and reliability, making me an excellent collaborator in any professional setting.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
   );
 };
 
