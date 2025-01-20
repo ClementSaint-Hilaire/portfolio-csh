@@ -214,9 +214,7 @@ export function HomeMainBento() {
                     />
                 </a>
                 <a className="w-2/6 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" href="/icons">
-                    <Marquee4Vertical>
-                       
-                    </Marquee4Vertical>
+                    <Marquee4Vertical/>                    
                 </a>
                 <a className="w-1/6 h-auto rounded-xl bg-blanc dark:bg-noir" target="_target" href="https://medium.com/@clement.sainthilaire.app">
                     <Image
