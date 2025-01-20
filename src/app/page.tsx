@@ -4,6 +4,9 @@ import Footer from "@/components/Footer";
 import WhatIDoSection from "@/components/WhatIDo";
 import HeroSection from "@/components/Hero";
 import { HomeMainBento } from "@/components/Home-MainBento"; 
+import WhyWorkWithMe from "@/components/WhyWorkWithMe";
+
+
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -31,6 +34,14 @@ export default function Page() {
           <div className="space-y-12 w-full max-w-[1100px] mx-auto">
             <BlurFade>
               <WhatIDoSection/>
+            </BlurFade>
+          </div>
+      </section>
+
+      <section id="values">
+          <div className="space-y-12 w-full max-w-[1100px] mx-auto">
+            <BlurFade>
+              <WhyWorkWithMe/>
             </BlurFade>
           </div>
       </section>
