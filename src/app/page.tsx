@@ -5,6 +5,7 @@ import WhatIDoSection from "@/components/WhatIDo";
 import HeroSection from "@/components/Hero";
 import { HomeMainBento } from "@/components/Home-MainBento"; 
 import WhyWorkWithMe from "@/components/WhyWorkWithMe";
+import { MagicCardDemo } from "@/components/Testimonials";
 
 
 
@@ -45,6 +46,15 @@ export default function Page() {
             </BlurFade>
           </div>
       </section>
+
+      <section id="testimoials">
+          <div className="space-y-12 w-full max-w-[1100px] mx-auto">
+            <BlurFade>
+              <MagicCardDemo/>
+            </BlurFade>
+          </div>
+      </section>
+    
     
       <section id="footer">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
