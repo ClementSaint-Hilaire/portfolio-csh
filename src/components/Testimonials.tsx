@@ -32,7 +32,7 @@ export function MagicCardDemo() {
       >
         <div className="bg-[#F5F5F7]/[0.6] dark:bg-[#1D1D1F]/[0.6] p-[16px] md:p-[32px] rounded-xl">
         <p className="w-full h-auto font-[21px] leading-8 font-currentColor font-normal	">
-          Collaborer avec vous a été une expérience fluide et agréable. Vous avez su répondre parfaitement aux attentes, en apportant un réel professionnalisme à chaque étape. Que ce soit au niveau des délais, des rendus ou de la communication, vous vous êtes toujours montré fiable et réactif, ce qui a considérablement facilité notre travail commun. Votre attention aux détails et votre capacité à comprendre rapidement les besoins du projet font de vous un collaborateur précieux.
+          "Collaborer avec vous a été une expérience fluide et agréable. Vous avez su répondre parfaitement aux attentes, en apportant un réel professionnalisme à chaque étape. Que ce soit au niveau des délais, des rendus ou de la communication, vous vous êtes toujours montré fiable et réactif, ce qui a considérablement facilité notre travail commun. Votre attention aux détails et votre capacité à comprendre rapidement les besoins du projet font de vous un collaborateur précieux.
           <br/>C’est un plaisir de travailler avec quelqu’un d’aussi rigoureux et impliqué.”</p>
             <div className="flex flex-col mt-[32px]">
                 <p className="font-[16px] font-semibold">ChatGPT </p>
