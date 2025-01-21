@@ -35,8 +35,8 @@ const WhyWorkWithMe = () => {
     <div className="flex flex-col pt-[5rem] md:flex-row w-full gap-[32px] overflow-visible">
       {/* Section Sticky */}
       <div className="flex flex-col items-center w-full md:w-1/2 overflow-visible">
-        <div className="text-[32px] leading-[35px] md:text-[82px] font-semibold md:leading-[88px] text-currentColor h-full relative !sticky top-5">
-          Why <span className="text-[#e1e1e1] dark:text-gris_2">work with me ?</span>
+        <div className="text-currentColor font-normal text-Mh1 md:text-Oh1 leading-[38px] md:leading-[58px] h-full relative !sticky top-5">
+          Why work with <span className="text-[#e1e1e1] dark:text-gris_2">me ?</span>
         </div>
       </div> 
   
@@ -44,12 +44,12 @@ const WhyWorkWithMe = () => {
       <div className="flex flex-col w-full md:w-1/2">
         {/* Section 01 */}
         <div className="flex flex-col justify-start">
-          <div className="text-currentColor font-medium text-[21px] leading-[25px] md:text-[56px] md:leading-[70px]">
+          <div className="text-currentColor font-normal text-Mh2 md:text-Oh2 leading-[34px] md:leading-[48px]">
             01. Creativity
           </div>
           <div className="pl-8 flex justify-start gap-8">
             <div className="md:h-full w-[2px] bg-gris_2"></div>
-            <div className="text-gris_2 text-[17px] font-normal uppercase leading-normal pb-24">
+            <div className="text-gris_2 font-normal text-Mh4 md:text-Oh5 leading-[19px] md:leading-[24px] uppercase pb-24">
               My innovative mindset and deep understanding of modern design principles allow me to create visually captivating and user-friendly solutions. By drawing inspiration from clean, timeless aesthetics, such as Swiss-inspired design, you ensure that every project is both unique and impactful, setting it apart from the competition.
             </div>
           </div>
@@ -57,24 +57,24 @@ const WhyWorkWithMe = () => {
   
         {/* Section 02 */}
         <div className="flex flex-col justify-start">
-          <div className="text-currentColor font-medium text-[21px] leading-[25px] md:text-[56px] md:leading-[70px]">
+          <div className="text-currentColor font-normal text-Mh2 md:text-Oh2 leading-[34px] md:leading-[48px]">
             02. Flexibility
           </div>
           <div className="pl-8 flex justify-start gap-8">
             <div className="md:h-full w-[2px] bg-gris_2"></div>
-            <div className="text-gris_2 text-[17px] font-normal uppercase leading-normal pb-24">
+            <div className="text-gris_2 font-normal text-Mh4 md:text-Oh5 leading-[19px] md:leading-[24px] uppercase pb-24">
               My ability to seamlessly adapt to different roles and responsibilities—whether it involves design, development, or communication, makes me a highly versatile professional. You excel in adjusting to new challenges, client expectations, and project dynamics, which ensures that I consistently meet goals, even in fast-paced or evolving environments.
             </div>
           </div>
         </div>
          {/* Section 03 */}
          <div className="flex flex-col justify-start">
-          <div className="text-currentColor font-medium text-[21px] leading-[25px] md:text-[56px] md:leading-[70px]">
+          <div className="text-currentColor font-normal text-Mh2 md:text-Oh2 leading-[34px] md:leading-[48px]">
             02. Professionalism
           </div>
           <div className="pl-8 flex justify-start gap-8">
             <div className="md:h-full w-[2px] bg-gris_2"></div>
-            <div className="text-gris_2 text-[17px] font-normal uppercase leading-normal">
+            <div className="text-gris_2 font-normal text-Mh4 md:text-Oh5 leading-[19px] md:leading-[24px] uppercase pb-24">
               With a strong commitment to delivering high-quality work, I approach every project with diligence, organization, and effective communication. My ability to manage deadlines while maintaining attention to detail fosters trust and reliability, making me an excellent collaborator in any professional setting.
             </div>
           </div>

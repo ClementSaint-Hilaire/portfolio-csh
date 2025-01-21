@@ -19,7 +19,7 @@ export default function ResearchCarousel() {
   return (
     <div className="max-w mx-auto py-8 gap-4">
       <div className="flex mx-auto items-center justify-between items-center max-w-[1100px] py-8">  
-            <h2 className=" text-[16px] lg:text-[26px] font-semibold text-gris_2">
+            <h2 className="text-[#e1e1e1] dark:text-gris_2 font-normal text-Mh3 md:text-Oh3 leading-[26px] md:leading-[28px]">
                 <span className="text-noir dark:text-blanc">csh Writings.</span> Insights that shape the future.
             </h2>
             {/* Flèches personnalisées */}

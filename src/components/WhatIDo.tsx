@@ -33,8 +33,8 @@ const WhatIDoSection = () => {
     <div className=" mb-[200px] mx-auto w-full max-w-[1400px]">
 
       <div className="w-full">
-        <div className="h-[88px] justify-center md:mb-[64px]">
-            <div className="w-full text-center"><span className="text-currentColor text-[32px] leading-[35px] md:text-[82px] font-semibold md:leading-[88px]">Discover </span><span className="text-[#e1e1e1] text-[32px] font-semibold leading-[35px] md:text-[82px] md:leading-[88px] dark:text-gris_2">what I do</span></div>
+        <div className="h-[44px] justify-center md:mb-[64px]">
+            <div className="w-full text-center"><span className="text-currentColor font-normal text-Mh1 md:text-Oh1 leading-[38px] md:leading-[58px]">Discover what I</span><span className="text-[#e1e1e1] dark:text-gris_2 font-normal text-Mh1 md:text-Oh1 leading-[38px] md:leading-[58px]"> do</span></div>
         </div>
 
       <div className="grow shrink basis-0 flex-col justify-between w-full items-start gap-11 inline-flex items-center">
@@ -49,7 +49,7 @@ const WhatIDoSection = () => {
                   }`}
                 >
                   {/* Texte de la clé */}
-                    <span className="text-center text-[17px] font-semibold leading-normal">
+                    <span className="text-center text-Mh4 md:text-Oh5 font-normal leading-normal">
                       {key.charAt(0).toUpperCase() + key.slice(1)}
                     </span>
                     <div className="mt-[16px] w-[250px]">
@@ -72,7 +72,7 @@ const WhatIDoSection = () => {
             </div>
         </div>
         <BlurFade>
-            <div className="text-center text-black text-[21px] font-semibold leading-7 dark:text-blanc">
+            <div className="text-center text-currentColor text-text-Mh4 md:text-Oh5">
                 <div
                 dangerouslySetInnerHTML={{
                     __html: content[activeSection].text,
@@ -107,7 +107,7 @@ const WhatIDoSection = () => {
           
           <a href="/design" className="h-11 cursor-pointer px-[15px] py-2.5 bg-[#cae8fa]/50 rounded-full border border-[#0a84ff] justify-start items-center gap-4 inline-flex">
             <div className="w-[11px] h-[11px] bg-[#0a84ff] rounded-full" />
-            <div className="text-bleu text-[17px] font-medium leading-normal">expore more</div>
+            <div className="text-bleu text-Mh5 md:text-Oh5 font-medium leading-normal">expore more</div>
           </a>
 
       </div>  

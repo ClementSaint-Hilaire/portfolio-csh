@@ -97,9 +97,8 @@ const HeroSection = () => {
                   dangerouslySetInnerHTML={{ __html: content[activeSection] }}></div>
             </BlurFade>  
             <BlurFade>
-              <div className="self-stretch text-currentColor text-Oh3 md:text-Mh3 leading-[34px] font-normal text-gris_2">
-              You can explore here a selection of my work, 
-              please enjoy !    
+              <div className="self-stretch text-gris_2 text-Oh3 md:text-Mh3 leading-[34px] font-normal text-gris_2">
+              Since 2021, I've been dedicated my time to learn how to trasform idears into real creations. You can find a selection of my work. Please enjoy !   
               </div>
             </BlurFade>
           </div>

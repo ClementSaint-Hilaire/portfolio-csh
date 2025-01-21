@@ -1,15 +1,11 @@
 'use client';
 import { ModeToggle } from "@/components/mode-toggle";
-import { buttonVariants } from "@/components/ui/button";
 import { useState } from 'react';
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
-import BlurFade from "./magicui/blur-fade";
 import DropDownButton from "./dropdown-contact-button";
 
 
@@ -24,10 +20,10 @@ export default function Navbar() {
   const [activeLink, setActiveLink] = useState<number | null>(null);
 
   const navLinks = [
-    { id: '1', href: '/designs', label: 'All Projects' },
+    { id: '1', href: '/design', label: 'All Projects' },
     { id: '2', href: '/icons', label: 'Icons' },
     { id: '3', href: '/uikit', label: 'UI Landing Kit' },
-    { id: '4', href: '/desig-system', label: 'Design System' },
+    { id: '4', href: '/design-system', label: 'Design System' },
   ];
 
   return (
@@ -63,7 +59,7 @@ export default function Navbar() {
           </div>
         </div>
 
-    <div className="pointer-event-none fixed top-0 z-30 w-full mb-4 flex left-0	origin-top h-full max-h-[6rem] md:max-h-[4rem] bg-white bg-opacity-50 backdrop-blur-md dark:bg-black dark:bg-opacity-40">
+    <div className="px-[20px] pointer-event-none fixed top-0 z-30 w-full mb-4 flex left-0	origin-top h-full max-h-[6rem] md:max-h-[4rem] bg-white bg-opacity-50 backdrop-blur-md dark:bg-black dark:bg-opacity-40">
       <div className="z-50 mx-auto pointer-events-auto relative flex min-h-full h-full w-full max-w-[1400px] ">
 
           <div className="w-full relative flex justify-between items-center p-[20px] md:p-0 gap-[32px]">
