@@ -1,4 +1,3 @@
-import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
@@ -15,15 +14,11 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: "Works",
+    default: "Projects",
     template: `%s | csh`,
   },
-  description: DATA.description,
   openGraph: {
-    title: `${DATA.name}`,
-    description: DATA.description,
-    url: DATA.url,
-    siteName: `${DATA.name}`,
+    siteName: `csh`,
     locale: "en_US",
     type: "website",
   },
@@ -38,15 +33,12 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  twitter: {
-    title: `${DATA.name}`,
-    card: "summary_large_image",
-  },
   verification: {
     google: "",
     yandex: "",
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
