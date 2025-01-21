@@ -70,7 +70,7 @@ const WhyWorkWithMe = () => {
          {/* Section 03 */}
          <div className="flex flex-col justify-start">
           <div className="text-currentColor font-normal text-Mh2 md:text-Oh2 leading-[34px] md:leading-[48px]">
-            02. Professionalism
+            03. Professionalism
           </div>
           <div className="pl-8 flex justify-start gap-8">
             <div className="md:h-full w-[2px] bg-gris_2"></div>
