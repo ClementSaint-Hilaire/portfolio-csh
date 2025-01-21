@@ -6,14 +6,13 @@ import WebDesignCarousel from "@/components/Carrousel/Design-webdesing";
 import AppDesignCarousel from "@/components/Carrousel/Design-appdesing";
 import GraphicDesignCarousel from "@/components/Carrousel/Design-graphicdesing";
 import ResearchCarousel from "@/components/Carrousel/Design-research";
-import Image from 'next/image';
 
 const BLUR_FADE_DELAY = 0.04;
 
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh] ml-[16px]">
+    <div className="flex flex-col min-h-[100dvh] ml-[16px]">
 
       <section id="hero" className="flex mt-24 w-full max-w-[1400px] flex-1 mx-auto">
         <div className="w-1/3"></div>
@@ -56,6 +55,6 @@ export default function Page() {
             </div>
           </BlurFade>
         </section>
-    </main>
+    </div>
   );
 }

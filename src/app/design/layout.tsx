@@ -47,7 +47,6 @@ export const metadata: Metadata = {
     yandex: "",
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -57,13 +56,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased mx-auto pt-12 mx-[20px] sm:pt-24 ",
+          "min-h-screen bg-background font-sans antialiased mx-auto pt-12 mx-[20px] sm:pt-24",
           fontSans.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
-              {children}
+            {children}
           </TooltipProvider>
         </ThemeProvider>
       </body>

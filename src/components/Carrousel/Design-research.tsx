@@ -11,9 +11,7 @@ export default function ResearchCarousel() {
     { id: 2, title: 'VisionOS', bio: 'Le futur de l\'interface', href: 'https://www.figma.com/community/file/1328464238383806605/research-on-vision-os', img: '/design/research/visionos.png'},
     { id: 3, title: 'Fuji', bio: 'plus qu\'un appreil photo', href: 'https://medium.com/@clement.sainthilaire.app/fuji-x100vi-ef94b8f6b13a', img: '/design/research/fuji.png'},
     { id: 4, title: 'Arc', bio: 'Repensez la navigation', href: 'https://medium.com/@clement.sainthilaire.app/arc-browser-why-1fca52271578', img: '/design/research/arc.png'},
-    { id: 4, title: 'iMessage', bio: 'Le chiffrement quantique', href: 'https://medium.com/@clement.sainthilaire.app/imessage-et-le-chiffrement-quantique-e9747c8d22ad', img: '/design/research/imessage.png'},
-
-
+    { id: 5, title: 'iMessage', bio: 'Le chiffrement quantique', href: 'https://medium.com/@clement.sainthilaire.app/imessage-et-le-chiffrement-quantique-e9747c8d22ad', img: '/design/research/imessage.png'},
   ];
 
   return (
