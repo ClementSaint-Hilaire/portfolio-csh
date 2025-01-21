@@ -118,14 +118,18 @@ const config = {
   			
   		},
   		fontSize: {
-  			sm: '9px',
-  			m: '12px',
-  			l: '17px',
-  			xl: '21px',
-  			'2xl': '26px',
-  			'3xl': '36px',
-  			'4xl': '56px',
-  			'5xl': '80px'
+			Oh1: '54px',
+			Oh2: '40px',
+			Oh3: '24px',
+			Oh4: '20px',
+			Oh5: '16px',
+			Oh6: '12px',
+			Oh7: '9px',
+			Mh1: '32px',
+			Mh2: '28px',
+			Mh3: '20px',
+			Mh4: '16px',
+			Mh5: '9px',
   		},
   		borderRadius: {
   			none: '0',

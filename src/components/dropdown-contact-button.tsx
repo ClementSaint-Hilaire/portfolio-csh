@@ -61,22 +61,22 @@ export default function DropDownButton() {
   const controls = useAnimationControls();
 
   useEffect(() => {
-    controls.start({
+    controls.start({  
       clipPath: isOpen
         ? "inset(0% 0% 0% 0% round 12px)"
         : "inset(10% 50% 90% 50% round 12px)",
       opacity: isOpen ? 1 : 0,
-      transition: { duration: 0.4, ease: "easeInOut"},
+      transition: { duration: 0.2, ease: "easeInOut"},
     });
   }, [isOpen, controls]);
 
   return (
-    <div className="relative mx-auto w-full max-w-[200px]">
+    <div className="relative mx-auto w-auto justify-center flex">
       {/* Bouton principal */}
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className="w-[200px] h-14 px-4 py-4 bg-noir rounded-xl justify-center items-center gap-2 flex">
-        <div className="text-[#f5f5f7] text-[17px] font-bold leading-normal">Let's connect !</div>        
+        className="w-auto h-[36px] py-4 bg-noir rounded-full justify-center items-center gap-2 flex pl-[20px] pr-[8px]">
+        <div className="text-[#f5f5f7] text-Mh4 font-semibold leading-normal flex">Contact</div>        
         <motion.div
         animate={{ rotate: isOpen ? 90 : 0 }}
         >
@@ -92,7 +92,7 @@ export default function DropDownButton() {
       <motion.ul
         initial={{ clipPath: "inset(10% 50% 90% 50% round 12px)", opacity: 0 }}
         animate={controls}
-        className={`absolute z-10 mt-2 w-full origin-top rounded-lg bg-noir shadow-lg`}
+        className={`absolute z-10 mt-2 w-max origin-top rounded-lg bg-noir shadow-lg top-[35px]`}
       >
         {menuItems.map(({ name, icon, link, customStyle }) => (
           <li key={name} className="p-1">
