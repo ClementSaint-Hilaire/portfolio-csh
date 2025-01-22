@@ -7,8 +7,6 @@ import { HomeMainBento } from "@/components/Home-MainBento";
 import WhyWorkWithMe from "@/components/WhyWorkWithMe";
 import { MagicCardDemo } from "@/components/Testimonials";
 
-
-
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {

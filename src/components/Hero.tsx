@@ -2,6 +2,8 @@
 import { useState } from "react";
 import BlurFade from "./magicui/blur-fade";
 
+const BLUR_FADE_DELAY = 0.04;
+
 const HeroSection = () => {
   const [activeSection, setActiveSection] = useState("For anyone");
 
@@ -31,42 +33,6 @@ const HeroSection = () => {
       "I do magic stuff on my computer to make the internet look better. <br/> <br/> And yes I ate my vegetables already...",
   };
   
-  const handleScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = -100;
-      const top = element.getBoundingClientRect().top + window.scrollY + offset;
-
-      window.scrollTo({
-        top,
-        behavior: "smooth",
-      });
-    }
-  };
-  const simpleHandleScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 65;
-      const top = element.getBoundingClientRect().top + window.scrollY + offset;
-
-      window.scrollTo({
-        top,
-        behavior: "smooth",
-      });
-    }
-  };
-  const valueHandleScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = -65;
-      const top = element.getBoundingClientRect().top + window.scrollY + offset;
-
-      window.scrollTo({
-        top,
-        behavior: "smooth",
-      });
-    }
-  };
   return (
     <div className="justify-center items-center gap-32 inline-flex w-full max-w-[1400px] mx-auto">
 

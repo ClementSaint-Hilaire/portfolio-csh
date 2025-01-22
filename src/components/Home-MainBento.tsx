@@ -1,5 +1,3 @@
-import { cn } from "@/lib/utils";
-import Marquee from "@/components/magicui/marqueeHover";
 import { OrbitingCirclesTools } from "./OrbitingCircles";
 import { NumberTickerDesigns } from "./magicui/number-tiker-designs";
 import Image from "next/image";

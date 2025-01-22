@@ -87,7 +87,7 @@ export default function Navbar() {
                   href={link.href}
                   onMouseEnter={() => setActiveLink(index)}
                   onMouseLeave={() => setActiveLink(null)}
-                  className={`text-Mh4 font-medium transition-colors duration-100 ${
+                  className={`text-Mh4 font-normal transition-colors duration-100 ${
                     activeLink === index ? 'text-grey' : 'currentColor'
                   } ${activeLink !== index && activeLink !== null && 'text-gray-400'}`}
                 >
