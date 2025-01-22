@@ -157,7 +157,7 @@ export function HomeMainBento() {
 
                 <div className="w-full md:w-1/3 h-auto gap-[5px] flex flex-col">
 
-                    <a className="w-full h-2/3 rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_blank" href="https://www.figma.com/proto/y7f0t63Nb2XHy5HHo38Jw2/Skorpia.fr-3.0?page-id=1%3A3&node-id=2-3&viewport=426%2C105%2C0.08&t=rVXnUtPTU2axXnly-1&scaling=scale-down-width&content-scaling=fixed&hotspot-hints=0">
+                    <a className="w-full h-2/3 rounded-xl bg-blanc dark:bg-noir overflow-hidden" href="/design/skorpia">
                         <Image
                             src="/Home/bentoHome/4.webp"
                             alt="Picture of the author"
