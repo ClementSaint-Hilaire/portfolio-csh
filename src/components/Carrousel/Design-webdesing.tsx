@@ -8,9 +8,10 @@ import 'swiper/css/navigation';
 export default function WebDesignCarousel() {
   const webSlides = [
     { id: 1, title: 'Skorpia.fr', bio: 'Redécouvrez l\'hebergement.', href: '/design/skorpia', img: '/design/skorpia.png'},
-    { id: 2, title: 'Avalanche.tv', bio: 'A new universe to create.', href: 'https://www.figma.com/proto/GKm1Oo6KEPjJeqRU3NcOjb/Film-compagny-%7C-Design-Template?page-id=1%3A3316&node-id=1-3491&viewport=727%2C1126%2C0.24&t=RY9NhcuX8YQpOw4h-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3491', img: '/design/avalanche.png'},
+    { id: 2, title: 'Assoreg.fr', bio: 'La solution pour votre association', href: '/design/assoreg', img: '/design/assoreg.webp'},
     { id: 3, title: 'Wikipedia.org', bio: 'Simplicity at the core.', href: 'https://www.figma.com/proto/7lRkhdwfygsZoUGkFKA6vf/Wikipedia-%7C-Website-Design?page-id=1%3A4&node-id=4-37&p=f&viewport=1188%2C150%2C0.25&t=tRGsUg6npXm8goPs-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4%3A37&hotspot-hints=0', img: '/design/wikipedia.png'},
     { id: 4, title: 'Croissantage.com', bio: 'Cyber-eductation for your team.', href: 'https://croissantage.com', img: '/design/croissantage.png'},
+    { id: 5, title: 'Avalanche.tv', bio: 'A new universe to create.', href: 'https://www.figma.com/proto/GKm1Oo6KEPjJeqRU3NcOjb/Film-compagny-%7C-Design-Template?page-id=1%3A3316&node-id=1-3491&viewport=727%2C1126%2C0.24&t=RY9NhcuX8YQpOw4h-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3491', img: '/design/avalanche.png'},
 
   ];
 

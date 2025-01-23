@@ -21,7 +21,7 @@ export default function Page() {
                 <div className="w-full md:w-max"><span className="text-currentColor font-normal text-Mh1 md:text-Oh1 leading-[38px] md:leading-[58px]">Designs you can</span><span className="text-[#e1e1e1] dark:text-gris_2 font-normal text-Mh1 md:text-Oh1 leading-[38px] md:leading-[58px]"> relate</span></div>
               </BlurFade>
               <BlurFade>
-                <div className="text-gris_2 font-normal text-Oh3 md:text-Mh3 leading-[34px]">Discover here a selection of my recent projects, web, mobile, writings and graphic creations & collaborations.</div>
+                <div className="text-gris_2 font-normal text-Oh3 md:text-Mh3 leading-[34px]">Discover here a selection of my recent projects, web, mobile, writings, graphic creations & collaborations.</div>
               </BlurFade>
             </div>
           </div>

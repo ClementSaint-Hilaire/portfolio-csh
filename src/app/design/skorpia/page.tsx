@@ -32,7 +32,7 @@ const FAQAccordion = () => {
     },
     {
       id: 3,
-      question: "links",
+      question: "Links",
       answer: `<a href="https://clementsainthilaire.notion.site/skorpia-design-system?pvs=4" target="_blank" rel="noopener noreferrer">Design System</a><br/>
                <a href="https://www.figma.com/proto/y7f0t63Nb2XHy5HHo38Jw2/Skorpia.fr-3.0?page-id=1%3A3&node-id=2-3&viewport=426%2C105%2C0.08&t=rVXnUtPTU2axXnly-1&scaling=scale-down-width&content-scaling=fixed&hotspot-hints=0" target="_blank" rel="noopener noreferrer">Skorpia.fr</a><br/>
                <a href="https://www.instagram.com/skorpia_fr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">Instagram</a>`,
@@ -89,7 +89,7 @@ export default function Page() {
       <div className="flex flex-col w-full md:w-1/3">
         <FAQAccordion/>
       </div>
-      <div className="flex flex-col w-full md:w-2/3">
+      <div className="flex flex-col w-full pt-[70px] md:w-2/3">
         <BlurFade>
           <BentoGrid>
             {features.map((feature) => (
