@@ -34,11 +34,11 @@ const FAQAccordion = () => {
     <br/> <br/>
     Les résultats de mon intervention ont été multiples. Pour ce qui est de la conception de l’identité visuelle, elle a permis de guider les graphistes dans leurs travaux. Mon travail sur l’UX, quant à lui, a permis de rendre plus user-friendly certains processus fastidieux comme l’inscription.`,
     },
-    {
-      id: 2,
-      question: "Testimonial",
-      answer: `You can contact support via the help section on our website or by emailing support@skorpia.fr.`,
-    },
+    // {
+    //   id: 2,
+    //   question: "Testimonial",
+    //   answer: `You can contact support via the help section on our website or by emailing support@skorpia.fr.`,
+    // },
     {
       id: 3,
       question: "Links",

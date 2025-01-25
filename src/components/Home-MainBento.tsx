@@ -175,7 +175,7 @@ export function HomeMainBento() {
                                 className="object-cover w-full h-full"
                             />
                         </a>
-                        <a className="w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_black" href="https://medium.com/@clement.sainthilaire.app">
+                        <a className="w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_black" href="/design/assoreg">
                             <Image
                                 src="/Home/bentoHome/10.webp"
                                 alt="Picture of the author"
