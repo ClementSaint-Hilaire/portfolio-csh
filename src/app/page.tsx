@@ -5,7 +5,7 @@ import WhatIDoSection from "@/components/WhatIDo";
 import HeroSection from "@/components/Hero";
 import { HomeMainBento } from "@/components/Home-MainBento"; 
 import WhyWorkWithMe from "@/components/WhyWorkWithMe";
-import { MagicCardDemo } from "@/components/Testimonials";
+import { TestimonailsCards } from "@/components/Testimonials";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -48,7 +48,7 @@ export default function Page() {
       <section id="testimoials">
           <div className="space-y-12 w-full max-w-[1100px] mx-auto">
             <BlurFade>
-              <MagicCardDemo/>
+              <TestimonailsCards/>
             </BlurFade>
           </div>
       </section>

@@ -28,7 +28,19 @@ const FAQAccordion = () => {
     {
       id: 2,
       question: "Testimonial",
-      answer: `You can contact support via the help section on our website or by emailing support@skorpia.fr.`,
+      answer: `Bonjour, 
+              <br/><br/>
+              J'aimerais vous partager mon expérience avec Clément dans le cadre de son travail en tant que bénévole au sein de l'association d'hébergement SKORPIA.
+              <br/><br/>
+              Je tiens tout d'abord à le remercier pour tout le travail exceptionnel qu’il a réalisé.
+              <br/><br/>
+              Son professionnalisme m’a véritablement impressionné, tout comme son souci constant de bien faire. Chaque élément de ses créations, des couleurs, des icônes, des rendus, aux détails graphiques, témoigne d’une grande rigueur et d’un véritable talent. Grâce à lui, nous avons une identité visuelle forte et parfaitement alignée avec nos valeurs, que nous ne pouvions même pas imaginer avant de le rencontrer, et qui est désormais essentielle pour nous.
+              <br/><br/>
+              Clément est une personne sérieuse et appliquée, sur qui on peut compter, et collaborer avec lui a été un véritable plaisir. Je ne peux que le recommander à tous ceux qui recherchent un professionnel de la création artistique passionné, investi et talentueux.
+              <br/><br/>
+              Cordialement,
+              <br/><br/>
+              Eliot Mafille`,
     },
     {
       id: 3,
