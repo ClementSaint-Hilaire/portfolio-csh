@@ -2,6 +2,8 @@
 import { useState } from "react";
 import BlurFade from "./magicui/blur-fade";
 
+const BLUR_FADE_DELAY = 0.04;
+
 const HeroSection = () => {
   const [activeSection, setActiveSection] = useState("For anyone");
 
@@ -14,9 +16,9 @@ const HeroSection = () => {
       />
       <span style="color: #0a84ff;">Clément Saint-Hilaire</span> 
       a french 
-      <img src="/Home/french.png" alt="icon"class="responsive-image2"/>
-      digital creator who cares about making beautifull 
-      <img src="/Home/beautiful.png" alt="icon" class="responsive-image2"/>
+      <img src="/Home/french.png" alt="icon"class="responsive-image"/>
+      digital creator who cares about making beautiful
+      <img src="/Home/beautiful.png" alt="icon" class="responsive-image"/>
       things that help people.
       </span>`,
     designer:
@@ -31,70 +33,21 @@ const HeroSection = () => {
       "I do magic stuff on my computer to make the internet look better. <br/> <br/> And yes I ate my vegetables already...",
   };
   
-  const handleScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = -100;
-      const top = element.getBoundingClientRect().top + window.scrollY + offset;
-
-      window.scrollTo({
-        top,
-        behavior: "smooth",
-      });
-    }
-  };
-  const simpleHandleScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 65;
-      const top = element.getBoundingClientRect().top + window.scrollY + offset;
-
-      window.scrollTo({
-        top,
-        behavior: "smooth",
-      });
-    }
-  };
-  const valueHandleScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = -65;
-      const top = element.getBoundingClientRect().top + window.scrollY + offset;
-
-      window.scrollTo({
-        top,
-        behavior: "smooth",
-      });
-    }
-  };
   return (
     <div className="justify-center items-center gap-32 inline-flex w-full max-w-[1400px] mx-auto">
 
       <div className="gap-8 flex-col justify-center items-start inline-flex justify-between w-full mx-auto md:flex-row">
 
-        <div className="w-1/4 h-[596px] flex-col justify-center items-start gap-8 inline-flex hidden md:flex">
-            <div className="self-stretch h-56 flex-col justify-start items-start gap-4 flex">
-            <div className="text-currentColor text-[17px] font-semibold leading-normal">Intro</div>
-            <button className="text-[#75757a] text-[17px] font-semibold leading-normal transition"
-              onClick={() => handleScroll("mainBento")}>Works</button>
-            <button className="text-[#75757a] text-[17px] font-semibold leading-normal transition"
-              onClick={() => simpleHandleScroll("services")}>Services</button>
-            <button className="text-[#75757a] text-[17px] font-semibold leading-normal transition"
-              onClick={() => valueHandleScroll("values")}>Values</button>
-            <button className="text-[#75757a] text-[17px] font-semibold leading-normal transition"
-              onClick={() => simpleHandleScroll("")}>Background</button>
-            <button className="text-[#75757a] text-[17px] font-semibold leading-normal transition"
-              onClick={() => simpleHandleScroll("footer")}>Contact</button>
-          </div>
+        <div className="w-1/3 h-auto hidden md:flex">
         </div>
 
-        <div className="grow shrink basis-0 flex-col justify-between w-full md:w-3/4 items-start gap-11 inline-flex">
+        <div className="grow shrink basis-0 flex-col justify-between w-full md:w-1/3 items-start gap-[16px] inline-flex">
           <div className="self-stretch w-full items-center inline-flex overflow-scroll scroll-smooth gap-[32px]">
             {Object.keys(content).map((key) => (
               <div
                 key={key}
                 onClick={() => setActiveSection(key)}
-                className={`text-gris_2 text-[17px] font-semibold cursor-pointer flex flex-none ${
+                className={`text-gris_2 text-Mh4 font-normal cursor-pointer flex flex-none ${
                   activeSection === key
                     ? "text-noir dark:text-blanc"
                     : "text-gris_2"
@@ -104,10 +57,17 @@ const HeroSection = () => {
               </div>
             ))}
           </div>
-          <BlurFade>
-            <div className="self-stretch text-noir text-[38px] md:text-[80px] leading-[40px] md:leading-[85px] font-semibold dark:text-blanc"
-                dangerouslySetInnerHTML={{ __html: content[activeSection] }}></div>
-          </BlurFade>  
+          <div className="flex flex-col gap-[32px]">
+            <BlurFade>
+              <div className="self-stretch text-currentColor text-Mh1 md:text-Oh1 leading-[38px] md:leading-[58px] font-normal"
+                  dangerouslySetInnerHTML={{ __html: content[activeSection] }}></div>
+            </BlurFade>  
+            <BlurFade>
+              <div className="self-stretch text-gris_2 text-Oh3 md:text-Mh3 leading-[34px] font-normal text-gris_2">
+              Since 2021, I've been dedicated my time to learn how to trasform idears into real creations. You can find a selection of my work. Please enjoy !   
+              </div>
+            </BlurFade>
+          </div>
         </div>
         
       </div>

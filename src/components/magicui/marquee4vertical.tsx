@@ -77,7 +77,7 @@ const fourthRow = icons.slice(2, icons.length / 2);
 
 export function Marquee4Vertical() {
   return (
-    <div className="relative flex h-[250px] w-full flex-row items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+    <div className="relative flex h-[250px] w-full flex-row items-center justify-center overflow-hidden rounded-xl bg-blanc dark:bg-noir">
       <Marquee vertical className="[--duration:20s]">
         {firstRow.map((icon, index) => (
           <div
@@ -126,8 +126,6 @@ export function Marquee4Vertical() {
           </div>
         ))}
       </Marquee>
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-white dark:from-background"></div>
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-white dark:from-background"></div>
     </div>
   );
 }

@@ -1,5 +1,3 @@
-import { cn } from "@/lib/utils";
-import Marquee from "@/components/magicui/marqueeHover";
 import { OrbitingCirclesTools } from "./OrbitingCircles";
 import { NumberTickerDesigns } from "./magicui/number-tiker-designs";
 import Image from "next/image";
@@ -157,7 +155,7 @@ export function HomeMainBento() {
 
                 <div className="w-full md:w-1/3 h-auto gap-[5px] flex flex-col">
 
-                    <a className="w-full h-2/3 rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_blank" href="https://www.figma.com/proto/y7f0t63Nb2XHy5HHo38Jw2/Skorpia.fr-3.0?page-id=1%3A3&node-id=2-3&viewport=426%2C105%2C0.08&t=rVXnUtPTU2axXnly-1&scaling=scale-down-width&content-scaling=fixed&hotspot-hints=0">
+                    <a className="w-full h-2/3 rounded-xl bg-blanc dark:bg-noir overflow-hidden" href="/design/skorpia">
                         <Image
                             src="/Home/bentoHome/4.webp"
                             alt="Picture of the author"
@@ -177,7 +175,7 @@ export function HomeMainBento() {
                                 className="object-cover w-full h-full"
                             />
                         </a>
-                        <a className="w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_black" href="https://medium.com/@clement.sainthilaire.app">
+                        <a className="w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_black" href="/design/assoreg">
                             <Image
                                 src="/Home/bentoHome/10.webp"
                                 alt="Picture of the author"
@@ -214,9 +212,7 @@ export function HomeMainBento() {
                     />
                 </a>
                 <a className="w-2/6 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" href="/icons">
-                    <Marquee4Vertical>
-                       
-                    </Marquee4Vertical>
+                    <Marquee4Vertical/>                    
                 </a>
                 <a className="w-1/6 h-auto rounded-xl bg-blanc dark:bg-noir" target="_target" href="https://medium.com/@clement.sainthilaire.app">
                     <Image
