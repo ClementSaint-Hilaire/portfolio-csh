@@ -157,7 +157,7 @@ export function HomeMainBento() {
 
                     <a className="w-full h-2/3 rounded-xl bg-blanc dark:bg-noir overflow-hidden" href="/design/skorpia">
                         <Image
-                            src="Home/bentoHome/4.webp"
+                            src="/Home/bentoHome/4.webp"
                             alt="Picture of the author"
                             width={635}
                             height={575}
@@ -169,7 +169,7 @@ export function HomeMainBento() {
                         <a className="w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" href="/design-system">
                         <Image
                                 src="/Home/bentoHome/9.webp"
-                                alt="Picture of the author"
+                                alt="skorpia.fr"
                                 width={250}
                                 height={255}
                                 className="object-cover w-full h-full"
@@ -178,7 +178,7 @@ export function HomeMainBento() {
                         <a className="w-1/2 h-auto rounded-xl bg-blanc dark:bg-noir overflow-hidden" target="_black" href="/design/assoreg">
                             <Image
                                 src="/Home/bentoHome/10.webp"
-                                alt="Picture of the author"
+                                alt="assoreg.fr"
                                 width={315}
                                 height={235}
                                 className="object-cover w-full h-full"
