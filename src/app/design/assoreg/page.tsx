@@ -4,11 +4,11 @@ import { BentoCard, BentoGrid } from "@/components/magicui/bento-case";
 import { useState } from "react";
 
 const features = [
-  { link: "/design/case/assoreg/1.webp", id: 1, isFullWidth: true },
-  { link: "/design/case/assoreg/2.webp", id: 2, isFullWidth: true },
-  { link: "/design/case/assoreg/3.webp", id: 3, isFullWidth: false },
-  { link: "/design/case/assoreg/4.webp", id: 4, isFullWidth: false },
-  { link: "/design/case/assoreg/5.webp", id: 5, isFullWidth: true },
+  { link: "/design/case/Assoreg/1.webp", id: 1, isFullWidth: true },
+  { link: "/design/case/Assoreg/2.webp", id: 2, isFullWidth: true },
+  { link: "/design/case/Assoreg/3.webp", id: 3, isFullWidth: false },
+  { link: "/design/case/Assoreg/4.webp", id: 4, isFullWidth: false },
+  { link: "/design/case/Assoreg/5.webp", id: 5, isFullWidth: true },
 
 ];
 
