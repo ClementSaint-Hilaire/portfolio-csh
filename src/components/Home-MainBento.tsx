@@ -157,7 +157,7 @@ export function HomeMainBento() {
 
                     <a className="w-full h-2/3 rounded-xl bg-blanc dark:bg-noir overflow-hidden" href="/design/skorpia">
                         <Image
-                            src="/Home/bentoHome/4.webp"
+                            src="Home/bentoHome/4.webp"
                             alt="Picture of the author"
                             width={635}
                             height={575}

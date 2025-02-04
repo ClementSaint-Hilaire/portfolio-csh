@@ -40,7 +40,7 @@ const FAQAccordion = () => {
     //   answer: `You can contact support via the help section on our website or by emailing support@skorpia.fr.`,
     // },
     {
-      id: 3,
+      id: 3,  
       question: "Links",
       answer: `<a href="https://clementsainthilaire.notion.site/assoreg-design-doc?pvs=4" target="_blank" rel="noopener noreferrer">Design System Documentation</a><br/>
                <a href="https://assoreg.fr" target="_blank" rel="noopener noreferrer">Asoreg.fr</a><br/>`
