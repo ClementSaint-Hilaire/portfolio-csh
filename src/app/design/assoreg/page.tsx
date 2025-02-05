@@ -94,8 +94,8 @@ const FAQAccordion = () => {
 export default function Page() {
   return (
     <div className="flex flex-col md:flex-row w-full max-w-[1400px] mx-auto gap-[32px] py-[50px] md:pt-0">
-      <div className="flex flex-col w-full md:w-1/3">
-        <FAQAccordion/>
+      <div className="flex flex-col w-full mt-[100px] md:mt-0 md:w-1/3">
+      <FAQAccordion/>
       </div>
       <div className="flex flex-col w-full pt-[70px] md:w-2/3">
         <BlurFade>
