@@ -32,6 +32,7 @@ const BentoCard = ({
       alt="Case picture"
       fill
       className="object-cover"
+      priority={true}
     />
   </div>
 );
