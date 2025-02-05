@@ -4,14 +4,14 @@ import { BentoCard, BentoGrid } from "@/components/magicui/bento-case";
 import { useState } from "react";
 
 const features = [
-  { link: "/design/case/trott/1.webp", id: 1, isFullWidth: true },
-  { link: "/design/case/trott/2.webp", id: 2, isFullWidth: true },
-  { link: "/design/case/trott/3.webp", id: 3, isFullWidth: true },
-  { link: "/design/case/trott/4.webp", id: 4, isFullWidth: true },
-  { link: "/design/case/trott/5.webp", id: 5, isFullWidth: true },
-  { link: "/design/case/trott/6.webp", id: 6, isFullWidth: true },
-  { link: "/design/case/trott/7.webp", id: 7, isFullWidth: true },
-  { link: "/design/case/trott/8.webp", id: 8, isFullWidth: true },
+  { link: "/design/case/Trott/1.webp", id: 1, isFullWidth: true },
+  { link: "/design/case/Trott/2.webp", id: 2, isFullWidth: true },
+  { link: "/design/case/Trott/3.webp", id: 3, isFullWidth: true },
+  { link: "/design/case/Trott/4.webp", id: 4, isFullWidth: true },
+  { link: "/design/case/Trott/5.webp", id: 5, isFullWidth: true },
+  { link: "/design/case/Trott/6.webp", id: 6, isFullWidth: true },
+  { link: "/design/case/Trott/7.webp", id: 7, isFullWidth: true },
+  { link: "/design/case/Trott/8.webp", id: 8, isFullWidth: true },
 ];
 
 const FAQAccordion = () => {
